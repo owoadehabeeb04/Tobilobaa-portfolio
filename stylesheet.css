@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Tiny Brushy';
+    src: url('TinyBrushy.eot');
+    src: local('Tiny Brushy'), local('TinyBrushy'),
+        url('TinyBrushy.eot?#iefix') format('embedded-opentype'),
+        url('TinyBrushy.woff2') format('woff2'),
+        url('TinyBrushy.woff') format('woff'),
+        url('TinyBrushy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

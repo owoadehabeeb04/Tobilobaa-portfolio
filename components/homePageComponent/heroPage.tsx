@@ -1,0 +1,73 @@
+import React from 'react'
+import uiUx from "../../public/assets/images/Group 3.svg"
+import productDesign from "../../public/assets/images/Component 8.svg"
+import dot from "../../public/assets/images/dot.svg"
+import Image from 'next/image'
+const HeroPage = () => {
+  return (
+    <>    <div className='h-screen relative'>
+      {/* <Image className='' src={mainPicture} alt="main picture" width={391} height={379} /> */}
+      <div className=" bg-[url('/images/Main picture.png')] bg-no-repeat bg-center background flex  absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%] h-full  justify-center items-center w-full mx-auto">
+        <h1 className='text-[#fff] font-tinyBrushy font-normal mr-[4rem] mt-[13rem] leading-[normal] text-[90px]'>
+          HELLO, I’M <br /> <span className='ml-[5rem]'>TOBILOBA</span> <br /> <span className='ml-[10rem]'>OWOADE</span>
+        </h1>
+      </div>
+      <div>
+        {/* <div className='bg-[##98A2B3] rounded-[100%] w-[4px] h-[4px] p-4 absolute left-[13%] top-[50%]'></div> */}
+        <Image className='absolute left-[17%] top-[48%] ' src={dot} width={4} height={4} alt="" />
+        <Image className='absolute left-[34.5%] top-[39%] ' src={dot} width={4} height={4} alt="" />
+
+        <Image className='absolute left-[13%] bottom-[14%] ' src={dot} width={4} height={4} alt="" />
+
+
+        <Image className='absolute right-[7%] bottom-[38%] ' src={dot} width={4} height={4} alt="" />
+        <Image className='absolute right-[24.5%] top-[39%] ' src={dot} width={4} height={4} alt="" />
+
+        <Image className='absolute right-[34%] bottom-[26%] ' src={dot} width={4} height={4} alt="" />
+
+      </div>
+      <Image className='absolute left-[13%] top-[57%] ' src={productDesign} width={137} height={123} alt="" />
+      <Image className='absolute right-[13%] top-[57%] ' src={uiUx} width={110} height={118} alt="" />
+
+    </div>
+
+      <div className='description  flex items-center pb-[2rem]'>
+        <ul className='flex text-center text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center'>
+          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+        </ul>
+        <ul className='flex text-center text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center'>
+          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+        </ul>
+        <ul className='flex text-center text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center'>
+          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+        </ul>
+      </div>
+    </>
+  )
+}
+
+export default HeroPage

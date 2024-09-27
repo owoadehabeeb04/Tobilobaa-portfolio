@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Beginning';
+    src: url('BeginningRegular.eot');
+    src: local('Beginning'), local('BeginningRegular'),
+        url('BeginningRegular.eot?#iefix') format('embedded-opentype'),
+        url('BeginningRegular.woff2') format('woff2'),
+        url('BeginningRegular.woff') format('woff'),
+        url('BeginningRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
