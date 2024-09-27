@@ -9,7 +9,7 @@ const ProjectsCaseStudy = () => {
             {caseStudies.map((caseStudies, index) => (
 
                 <div key={index} className={`rounded-[40px] border w-full border-solid border-[#667085] grid grid-cols-2 gap-[48px] place-items-center place-content-center p-[20px]`}>
-                    <div className={`${index % 2 === 0 ? 'order-1 w-full' : 'order-2'}`}><Image className='h-full object-contain w-full ' src={caseStudies?.image} width={542} height={380} alt={caseStudies?.title} /></div>
+                    <div className={`${index % 2 === 0 ? 'order-1 w-full' : 'order-2 w-full'}`}><Image className='h-full object-contain w-full ' src={caseStudies?.image} width={542} height={380} alt={caseStudies?.title} /></div>
                     <div className={`${index % 2 === 0 ? 'order-2' : 'order-1'} flex flex-col  px-[32px]  gap-[72px]`}>
                         <div>
                             <h1 className='text-[#fff] font-tinyBrushy text-[40px] font-normal leading-[normal]'>{caseStudies?.title}</h1>
@@ -19,7 +19,7 @@ const ProjectsCaseStudy = () => {
                                 {caseStudies?.skills?.map((skills, index) => (
                                     <p key={index} className='text-[#98A2B3] text-center font-tinyBrushy text-[14px] font-normal leadin-[normal]'>{skills}</p>
                                 ))}
-                            </div>
+                        </div>
                         </div>
                         <div className='flex flex-row  gap-0 flex-wrap  '>
                             {caseStudies?.links?.map((link, index) => (
