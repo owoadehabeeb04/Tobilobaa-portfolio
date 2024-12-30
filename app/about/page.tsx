@@ -27,7 +27,7 @@ const About = () => {
           <div>
             <p className="text-center font-Beginning text-[#C9CFD9] text-2xl  font-normal leading-[normal]">
               I’m Owoade Tobiloba, a UX designer & Webflow Developer based in
-              Lagos, Nigeria, with 3 years of experience in the field.
+              Toronto, Canada, with 3 years of experience in the field.
               Throughout my career, I ’ve had the opportunity to work on several
               projects, spanning industries like finance, admin, lifestyle,
               e-commerce and many more...I have a deep understanding of user

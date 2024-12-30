@@ -33,35 +33,35 @@ const HeroPage = () => {
 
       <div className='description  flex items-center pb-[2rem]'>
         <ul className='flex text-center text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center'>
-          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <li>A UI/UX Designer based in  Toronto, Canada, </li>
           <Image className=' ' src={dot} width={8} height={8} alt="" />
 
-          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <li>A UI/UX Designer based in Toronto, Canada</li>
           <Image className=' ' src={dot} width={8} height={8} alt="" />
 
-          <li>A UI/UX Designer based in Lagos, Nigeria</li>
-          <Image className=' ' src={dot} width={8} height={8} alt="" />
-
-        </ul>
-        <ul className='flex text-center text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center'>
-          <li>A UI/UX Designer based in Lagos, Nigeria</li>
-          <Image className=' ' src={dot} width={8} height={8} alt="" />
-
-          <li>A UI/UX Designer based in Lagos, Nigeria</li>
-          <Image className=' ' src={dot} width={8} height={8} alt="" />
-
-          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <li>A UI/UX Designer based in Toronto, Canada</li>
           <Image className=' ' src={dot} width={8} height={8} alt="" />
 
         </ul>
         <ul className='flex text-center text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center'>
-          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <li>A UI/UX Designer based in Toronto, Canada</li>
           <Image className=' ' src={dot} width={8} height={8} alt="" />
 
-          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <li>A UI/UX Designer based in Toronto, Canada</li>
           <Image className=' ' src={dot} width={8} height={8} alt="" />
 
-          <li>A UI/UX Designer based in Lagos, Nigeria</li>
+          <li>A UI/UX Designer based in Toronto, Canada</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+        </ul>
+        <ul className='flex text-center text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center'>
+          <li>A UI/UX Designer based in Toronto, Canada</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+          <li>A UI/UX Designer based in Toronto, Canada</li>
+          <Image className=' ' src={dot} width={8} height={8} alt="" />
+
+          <li>A UI/UX Designer based in Toronto, Canada</li>
           <Image className=' ' src={dot} width={8} height={8} alt="" />
 
         </ul>
