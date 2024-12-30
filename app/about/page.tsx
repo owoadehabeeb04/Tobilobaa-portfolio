@@ -13,8 +13,8 @@ import ArticlesWritten from "@/components/about me/articlesWritten";
 const About = () => {
   return (
     <div>
-      <div className="max-w-screen-xl mx-auto px-[2rem]  relative py-[9rem]">
-        <h1 className="text-center flex  gap-[14px] mx-auto justify-center   text-[#fff] font-tinyBrushy text-[48px] font-normal leading-[74px] uppercase">
+      <div className="max-w-screen-xl mx-auto px-5 md:px-[2rem]  relative sm:pt-0 pt-[96px] sm:py-[96px] md:py-[9rem]">
+        <h1 className="sm:text-center text-start flex  gap-[14px] mx-auto sm:justify-center   text-[#fff] font-tinyBrushy  text-[32px]  sm:text-[32px] md:text-[40px] lg:text-[48px] font-normal leading-[normal] lg:leading-[74px] uppercase">
           About Me{" "}
           <Image
             src={aboutMeEmogi}
@@ -23,9 +23,9 @@ const About = () => {
             height={31}
           />
         </h1>
-        <div className="pt-[32px] mx-auto max-w-[1512px] justify-center   w-full flex items-center gap-[32px] ">
+        <div className="md:pt-[24px] pt-[20px] lg:pt-[32px] mx-auto max-w-[1512px] justify-center   w-full flex items-center gap-[32px] ">
           <div>
-            <p className="text-center font-Beginning text-[#C9CFD9] text-2xl  font-normal leading-[normal]">
+            <p className="text-start sm:text-center font-Beginning text-[#C9CFD9]  text-base md:text-[20px] lg:text-2xl  font-normal leading-[normal]">
               I’m Owoade Tobiloba, a UX designer & Webflow Developer based in
               Toronto, Canada, with 3 years of experience in the field.
               Throughout my career, I ’ve had the opportunity to work on several
@@ -37,24 +37,24 @@ const About = () => {
             </p>
           </div>
         </div>
+        </div>
+
         <div className="mt-4 ">
           <WebflowUxLayout />
         </div>
-      </div>
-      <div className="mt-16 max-w-screen-xl flex flex-col gap-6 mx-auto px-[2rem] relative]">
-        <h1 className="font-tinyBrushy text-[#fff] text-5xl font-normal leading-[normal] uppercase">
-          OTHER INTERESTS.
+      <div className="mt-4 sm:mt-16 max-w-screen-xl flex flex-col gap-6 mx-auto px-5 md:px-[2rem] relative]">
+        <h1 className="font-tinyBrushy text-[#fff] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal leading-[normal] uppercase">
+          OTHER INTERESTS .
         </h1>
         <div className="flex flex-col gap-6">
-          <p className="text-[#C9CFD9] font-Beginning text-2xl font-normal leading-[normal]">
+          <p className="text-[#C9CFD9] font-Beginning text-base sm:text-[1.15rem]  md:text-xl  lg:text-2xl font-normal leading-[normal]">
             Outside of work, I&apos;m an avid gamer, with a particular love for FIFA.
             Podcasts are my go-to while working, providing a great balance
             between focus and entertainment. When I unwind, I often find myself
             watching movies, especially Bollywood films, though I also enjoy
             very good Nollywood productions.
           </p>
-          <p className="text-[#C9CFD9] font-Beginning text-2xl font-normal leading-[normal]">
-            Outside of work, I&apos;m an avid gamer, with a particular love for FIFA.
+          <p className="text-[#C9CFD9] font-Beginning text-base sm:text-[1.15rem]  md:text-xl  lg:text-2xl font-normal leading-[normal]">            Outside of work, I&apos;m an avid gamer, with a particular love for FIFA.
             Podcasts are my go-to while working, providing a great balance
             between focus and entertainment. When I unwind, I often find myself
             watching movies, especially Bollywood films, though I also enjoy
@@ -62,8 +62,7 @@ const About = () => {
             especially Afrobeats. Some of my favorite artists include BNXN,
             SIMI, AYO MAFF, MUIS, LLONA, ASAKE, and YOUNG JONN, among others.
           </p>
-          <p className="text-[#C9CFD9] font-Beginning text-2xl font-normal leading-[normal]">
-            I also have a strong affinity for writing. Over the years, I&apos;ve
+          <p className="text-[#C9CFD9] font-Beginning text-base sm:text-[1.15rem]  md:text-xl  lg:text-2xl font-normal leading-[normal]">            I also have a strong affinity for writing. Over the years, I&apos;ve
             penned about 8 articles on Medium, covering a range of topics from
             random musings to UI/UX content and reflections on how I&apos;m feeling
             at the time

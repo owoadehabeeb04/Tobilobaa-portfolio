@@ -41,7 +41,7 @@ html {
 }
 .background {
   background-image: url(../public/assets/images/Main\ picture.png);
-  background-size: 26%;
+  /* background-size: 26%; */
 }
 .backdrop-filter {
   background: rgba(41, 34, 34, 0.25);
