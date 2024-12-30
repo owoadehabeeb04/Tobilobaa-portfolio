@@ -36,8 +36,8 @@ const Footer = () => {
         }
     ]
     return (
-        <div className='max-w-[1512px] px-[6.5rem] ' id='contact'>
-
+        <div className='mx-auto px-[6.5rem] mt-20 ' id='contact'>
+            <div className='max-w-screen-xl mx-auto'>
             <div className='flex justify-between items-center'>
                 <Image src={footericon} alt="footer icon " width={111.9} height={67.9} />
                 <Image src={footericon} alt="footer icon " width={111.9} height={67.9} />
@@ -45,7 +45,7 @@ const Footer = () => {
             <div>
                 <div className='max-w-[1050px] flex justify-center items-center  flex-col mx-auto  pt-[40px]'>
                     <h1 className='font-beginning text-[40px] text-[#999] font-normal leading-[normal] text-center '>Exploring a new product idea? Looking for ways to improve your product?. Send a mail to:</h1>
-                    <a href="mailto:qudusowoade@gmail.com" className='underline w-[90%] text-center font-tinyBrushy text-[#fff] text-[4.5rem] font-normal leading-[normal] '>
+                    <a href="mailto:qudusowoade@gmail.com" className='underline text-center font-tinyBrushy text-[#fff] text-[4.5rem] font-normal leading-[normal] '>
                         QUDUSOWOADE@GMAIL.COM
                     </a>
                 </div>
@@ -59,6 +59,7 @@ const Footer = () => {
                 </div>
 
                 <p className='font-beginning pt-[86px] text-[#999] text-base font-normal leading-[normal]'>© 2024 Owoade Tobiloba. All Rights Reserved</p>
+            </div>
             </div>
         </div>
     )

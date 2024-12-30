@@ -21,7 +21,7 @@ const Navbar = () => {
     //     return currentPath === currentRoute ? "bg-black text-white" : "text-black";
     // };
     return (
-        <div className='max-w-[1512px] z-[100] fixed top-[1] w-full '>
+        <div className=' z-[100] mx-auto fixed top-[1] w-full '>
             <div className='flex max-w-screen-xl mx-auto px-[2rem] py-6 flex-row justify-between items-center '>
                 <Link href="/"><div>
                     <h1 className='text-[48px] font-normal font-tinyBrushy leading-[normal]'><span className='text-[#fff]'>T</span><span className='text-[#FFA17A] '>0</span></h1>

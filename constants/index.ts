@@ -5,7 +5,9 @@ import asset from "../public/assets/images/Asset export.png";
 import hatley from "../public/assets/images/Hatley export.png";
 import cupcake from "../public/assets/images/MacBook Pro 14_ - 2.png";
 import sanlamwebsite from "../public/assets/images/Frame 1001.png";
-
+import firstMusic from "../public/assets/images/Rectangle2.svg";
+import secondMusic from "../public/assets/images/Rectangle.svg";
+import article1 from "../public/assets/images/image 9.svg";
 export const navItems = [
   {
     text: "Projects",
@@ -176,4 +178,112 @@ export const sanlamExperience = [
 'I designed a user-friendly application facilitating vehicle insurance transactions through brokers, ensuring a seamless and efficient process for customers.',
 'I designed a comprehensive payment tracking and monitoring platform, which was successfully developed and seamlessly integrated with the NIBBS API, enhancing efficiency in tracking and managing customer payments.',
 'I designed a robust asset management system for the company, enabling seamless documentation and tracking of all assets. This system features dynamic functionality, allowing for easy editing, addition, and deletion of assets at any time, ensuring comprehensive asset management.',
+]
+
+
+export const musicPlaylist = [
+  {
+    title: 'Heartstrings from Naij 💚',
+    image: firstMusic,
+    link: ''
+  },
+  {
+    title: 'Vibes dey here so',
+    image: secondMusic,
+    link: ''
+  },
+  {
+    title: 'Vibes dey here so',
+    image: secondMusic,
+    link: ''
+  },
+  {
+    title: 'Vibes dey here so',
+    image: secondMusic,
+    link: ''
+  },
+  {
+    title: 'Vibes dey here so',
+    image: secondMusic,
+    link: ''
+  },
+
+  {
+    title: 'Vibes dey here so',
+    image: secondMusic,
+    link: ''
+  },
+  {
+    title: 'Vibes dey here so',
+    image: secondMusic,
+    link: ''
+  },
+  {
+    title: 'Vibes dey here so',
+    image: secondMusic,
+    link: ''
+  },
+  {
+    title: 'Vibes dey here so',
+    image: secondMusic,
+    link: ''
+  },
+  {
+    title: 'Vibes dey here so',
+    image: secondMusic,
+    link: ''
+},
+]
+
+
+export const articles = [
+  {
+    image: article1 ,
+    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    minRead: "3min read",
+    date: "JAN 11, 2024",
+    link: "",
+    linkTitle: "Read on Medium",
+  },
+  {
+    image: article1 ,
+    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    minRead: "3min read",
+    date: "JAN 11, 2024",
+    link: "",
+    linkTitle: "Read on Medium",
+  },
+  {
+    image: article1 ,
+    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    minRead: "3min read",
+    date: "JAN 11, 2024",
+    link: "",
+    linkTitle: "Read on Medium",
+  },
+  {
+    image: article1 ,
+    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    minRead: "3min read",
+    date: "JAN 11, 2024",
+    link: "",
+    linkTitle: "Read on Medium",
+  },
+  {
+    image: article1 ,
+    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    minRead: "3min read",
+    date: "JAN 11, 2024",
+    link: "",
+    linkTitle: "Read on Medium",
+  },
+
+  {
+    image: article1 ,
+    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    minRead: "3min read",
+    date: "JAN 11, 2024",
+    link: "",
+    linkTitle: "Read on Medium",
+  },
 ]

@@ -15,7 +15,8 @@ const config: Config = {
     },
     fontFamily: {
       tinyBrushy: ["TinyBrushy", "sans-serif"],
-      Beginning: ["Beginning", "sans-serif"]
+      Beginning: ["Beginning", "sans-serif"],
+      IndieFlower: ["IndieFlower", "sans-serif"],
     }
     
   },

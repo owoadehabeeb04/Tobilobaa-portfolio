@@ -1,10 +1,19 @@
+
+@import url("../public/fonts/TinyBrushy/stylesheet.css");
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("../public/fonts/TinyBrushy/stylesheet.css");
 :root {
   --background: #06090f;
   --foreground: #171717;
+}
+.font-Montserrat {
+  font-family: "Montserrat";
+}
+.font-IndieFlower {
+  font-family: 'Indie Flower';
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +33,11 @@ html {
 @font-face {
   font-family: "TinyBrushy";
   src: url("/fonts/TinyBrushy/TinyBrushy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IndieFlower";
+  src: url("/fonts/IndieFlower/IndieFlower-Regular.ttf") format("ttf");
 }
 .background {
   background-image: url(../public/assets/images/Main\ picture.png);
@@ -61,46 +75,16 @@ html {
 }
 
 @layer base {
-  /* 
-  @font-face {
-    font-family: "TinyBrushy";
-    src: url("/fonts/TinyBrushy/TinyBrushy.woff2") format("woff2");
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-  }
+  /* styles/globals.css */
+@font-face {
+  font-family: 'TinyBrushy';
+  src: url('/fonts/TinyBrushy/TinyBrushy.woff2') format('woff2'),
+       url('/fonts/TinyBrushy/TinyBrushy.woff') format('woff'),
+       url('/fonts/TinyBrushy/TinyBrushy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: "TinyBrushy";
-    src: url("/fonts/TinyBrushy/TinyBrushy.woff2") format("woff2");
-    font-weight: 600;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "TinyBrushy";
-    src: url("/fonts/TinyBrushy/TinyBrushy.woff2") format("woff2");
-    font-weight: 500;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "TinyBrushy";
-    src: url("/fonts/TinyBrushy/TinyBrushy.woff2") format("woff2");
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "TinyBrushy";
-    src: url("/fonts/TinyBrushy/TinyBrushy.woff2") format("woff2");
-    font-weight: 300;
-    font-display: swap;
-    font-style: normal;
-  } */
   @font-face {
     font-family: "Beginning";
     src: url("/fonts/Beginning/BeginningRegular.woff") format("truetype");
@@ -159,6 +143,11 @@ html {
 
 .clip-circle {
   clip-path: circle(50%);
+}
+.indie-flower-regular {
+  font-family: "IndieFlower", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font-tinyBrushy {
