@@ -20,7 +20,7 @@ const Projects = () => {
           width={62.412}
           height={56.396}
           alt="productdesign"
-          // className="sm:w-[5%] w-[10%] "
+          className="max-[768px]:w-[10%] "
         />
         <Image
           src={uiUx}
@@ -28,6 +28,8 @@ const Projects = () => {
           width={62.412}
           height={56.396}
           alt="productdesign"
+          className="max-[768px]:w-[10%] "
+
         />
       </div>
       <Image

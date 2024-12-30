@@ -51,7 +51,7 @@ const WebflowUxLayout: React.FC = () => {
               </div>
             </div>
 
-            <div className="aspect-[6/5] sm:aspect-[6/2]">
+            <div className="aspect-[6/5] sm:aspect-[6/2.5]">
             <div className="w-full rounded-[4px] h-full border-[4px] border-[#FFA17A] bg-[#fff] flex flex-row gap-2 justify-center items-center">
                 <div className="sm:w-[8px] sm:h-[7px] w-[4px] h-[3.5px]">
                   {dots}

@@ -13,7 +13,7 @@ import ArticlesWritten from "@/components/about me/articlesWritten";
 const About = () => {
   return (
     <div>
-      <div className="max-w-screen-xl mx-auto px-5 md:px-[2rem]  relative sm:pt-0 pt-[96px] sm:py-[96px] md:py-[9rem]">
+      <div className="max-w-screen-xl mx-auto px-5 md:px-[2rem]  relative  pt-[96px] md:pt-[9rem]">
         <h1 className="sm:text-center text-start flex  gap-[14px] mx-auto sm:justify-center   text-[#fff] font-tinyBrushy  text-[32px]  sm:text-[32px] md:text-[40px] lg:text-[48px] font-normal leading-[normal] lg:leading-[74px] uppercase">
           About Me{" "}
           <Image
@@ -39,7 +39,7 @@ const About = () => {
         </div>
         </div>
 
-        <div className="mt-4 ">
+        <div className="mt-4 sm:pb-[96px]  ">
           <WebflowUxLayout />
         </div>
       <div className="mt-4 sm:mt-16 max-w-screen-xl flex flex-col gap-6 mx-auto px-5 md:px-[2rem] relative]">
