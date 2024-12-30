@@ -28,7 +28,7 @@ const Navbar = () => {
                 </div>
                 </Link>
                 {/* bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 */}
-                <div className='w-fit'>
+                <div className='w-fit xbg-clip-padding backdrop-filter   backdrop-blur-2xl    bg-opacity-40  z-[150]  rounded-[300px] '>
                     <div className={`${pathname === '/' ? 'p-6' : 'p-2'} rounded-[300px] w-full  opacity-[25%]   bg-clip-padding backdrop-filter   backdrop-blur-2xl    bg-opacity-40  z-[150]  justify-center items-center border-[#fff] border border-solid      flex flex-row gap-4 `}>
 
                         {navItems.map((navs, index) => {

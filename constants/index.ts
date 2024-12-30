@@ -8,6 +8,12 @@ import sanlamwebsite from "../public/assets/images/Frame 1001.png";
 import firstMusic from "../public/assets/images/Rectangle2.svg";
 import secondMusic from "../public/assets/images/Rectangle.svg";
 import article1 from "../public/assets/images/image 9.svg";
+import article2 from "../public/assets/images/image 10.svg";
+import article3 from "../public/assets/images/image 11.svg";
+import article4 from "../public/assets/images/image 12.svg";
+import article5 from "../public/assets/images/image 13.svg";
+import article6 from "../public/assets/images/image 14.svg";
+
 export const navItems = [
   {
     text: "Projects",
@@ -246,32 +252,32 @@ export const articles = [
     linkTitle: "Read on Medium",
   },
   {
-    image: article1 ,
-    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    image: article3 ,
+    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS.",
     minRead: "3min read",
     date: "JAN 11, 2024",
     link: "",
     linkTitle: "Read on Medium",
   },
   {
-    image: article1 ,
-    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    image: article2 ,
+    title: "AFROBEATS SONGS THAT DESERVE A MUSIC VIDEO THAT DON’T HAVE…",
     minRead: "3min read",
     date: "JAN 11, 2024",
     link: "",
     linkTitle: "Read on Medium",
   },
   {
-    image: article1 ,
-    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    image: article4 ,
+    title: "MY STORY - Switched careers & LANDED a full-time ui/ux design role in 11 months",
     minRead: "3min read",
     date: "JAN 11, 2024",
     link: "",
     linkTitle: "Read on Medium",
   },
   {
-    image: article1 ,
-    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    image: article5 ,
+    title: "FEW TIPS NEEDED TO KICKSTART YOUR UI/UX CAREER.",
     minRead: "3min read",
     date: "JAN 11, 2024",
     link: "",
@@ -279,8 +285,8 @@ export const articles = [
   },
 
   {
-    image: article1 ,
-    title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
+    image: article6,
+    title: "BIASES IN UX RESEARCH AND HOW TO OVERCOME THEM.",
     minRead: "3min read",
     date: "JAN 11, 2024",
     link: "",
