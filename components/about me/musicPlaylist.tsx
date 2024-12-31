@@ -7,21 +7,22 @@ import { musicPlaylist } from "@/constants";
 const MusicPlaylist = () => {
   return (
     <div className="mt-20">
-      <div className="max-w-screen-xl px-[2rem] mx-auto">
+      <div className="max-w-screen-xl px-5 md:px-[2rem] mx-auto">
         <p className="text-[#fff]  text-2xl  md:text-3xl lg:text-4xl text-start font-normal leading-[normal] uppercase font-tinyBrushy">
           SOME OF MY MUSIC PLAYLISTS.
         </p>
       </div>
-      <div className="relative w-full mt-6 max-w-screen-2xl px-8 mx-auto sm:overflow-x-auto">
-        <div className="flex flex-col sm:flex-row gap-8 items-center w-max sm:px-4 pb-4 sm:scroll-smooth sm:snap-x sm:snap-mandatory">
+      <div className="relative w-full mt-6 max-w-screen-2xl px-0 mx-auto overflow-x-auto">
+        <div className="flex  flex-row gap-8 items-center w-max sm:px-0 pb-4 sm:scroll-smooth sm:snap-x sm:snap-mandatory">
           {musicPlaylist.map((music, index) => (
-            <div key={index} className="sm:snap-start sm:shrink-0">
+            <div key={index} className="snap-start shrink-0 max-[640px]:w-[240px]">
                 <div className="flex flex-col gap-4">
             <Image
                 src={music?.image}
                 alt={music?.title}
                 width={340}
                 height={281}
+                className="max-[640px]:w-full"
               />
            
               <Link

@@ -19,7 +19,7 @@ const ArticlesWritten = () => {
     <div>
       {" "}
       <div className="mt-20 pb-4">
-        <div className="max-w-screen-xl px-[2rem] mx-auto">
+        <div className="max-w-screen-xl px-5 md:px-[2rem] mx-auto">
           <p className="text-[#fff]  md:text-3xl text-2xl lg:text-4xl text-start font-normal leading-[normal] uppercase font-tinyBrushy">
             Some of the articles i have written,
           </p>
