@@ -5,8 +5,9 @@ import asset from "../public/assets/images/Asset export.png";
 import hatley from "../public/assets/images/Hatley export.png";
 import cupcake from "../public/assets/images/MacBook Pro 14_ - 2.png";
 import sanlamwebsite from "../public/assets/images/Frame 1001.png";
-import firstMusic from "../public/assets/images/Rectangle2.svg";
-import secondMusic from "../public/assets/images/Rectangle.svg";
+import topSongs from "../public/assets/images/Screenshot 2025-01-03 at 7.02.52 PM.png";
+import ilove from "../public/assets/images/828E9457-1C0C-43CF-A40C-DD7EA6403E6E.jpeg";
+import playlistCurated from "../public/assets/images/B0F32B09-7E2D-4BFB-A6DE-B0CCE5BF5BBE.png"
 import article1 from "../public/assets/images/image 9.svg";
 import article2 from "../public/assets/images/image 10.svg";
 import article3 from "../public/assets/images/image 11.svg";
@@ -189,56 +190,57 @@ export const sanlamExperience = [
 
 export const musicPlaylist = [
   {
-    title: 'Heartstrings from Naij 💚',
-    image: firstMusic,
-    link: ''
+    title: 'My Top Songs so far 24’',
+    image: topSongs,
+    link: 'https://open.spotify.com/playlist/00U0ZmtNVHgjlCRGK9XhZT?si=lChCDsmORK-iKUGl7g7k1A&nd=1&dlsi=5f4a6d155a494a87'
   },
   {
-    title: 'Vibes dey here so',
-    image: secondMusic,
-    link: ''
+    title: 'I Love ❤️',
+    image: ilove,
+    link: 'https://open.spotify.com/playlist/2wvpnthNZ2AFZeNA4GAEBR?si=nkvCzqKtTWelyA6LlhEcIg&pi=u-NPeRwsg1RkuE&nd=1&dlsi=e331a0f1a5074894'
   },
   {
-    title: 'Vibes dey here so',
-    image: secondMusic,
-    link: ''
+    title: 'Producers that sing',
+    image: playlistCurated,
+    link: 'https://open.spotify.com/playlist/5yvQTpSiPZNAIM80zXzR0o?si=jhIKl4GQRVuphODVtpEU9A&pi=u-1TEKtNsJT96O&nd=1&dlsi=f1158983860e4d9f',
+
   },
   {
-    title: 'Vibes dey here so',
-    image: secondMusic,
-    link: ''
+    title: 'Featured Davido',
+    image: playlistCurated,
+    link: 'https://open.spotify.com/playlist/6L3iDKyeH30M44rtcMzQyB?si=Wp32tNCWRd2D10wIoknseA&pi=u-IQ2YW3OtRhiZ&nd=1&dlsi=a3c95f8741f440d4'
   },
   {
-    title: 'Vibes dey here so',
-    image: secondMusic,
-    link: ''
+    title: 'Lojay⭐️',
+    image: playlistCurated,
+    link: 'https://open.spotify.com/playlist/0j5tc8NUEUE80pE0ki1xv4?si=rS4NuK6hSzOUcnBf7-VLkQ&pi=u-m9xuFcyfT7Gn&nd=1&dlsi=db2713a7210149ed'
   },
 
-  {
-    title: 'Vibes dey here so',
-    image: secondMusic,
-    link: ''
-  },
-  {
-    title: 'Vibes dey here so',
-    image: secondMusic,
-    link: ''
-  },
-  {
-    title: 'Vibes dey here so',
-    image: secondMusic,
-    link: ''
-  },
-  {
-    title: 'Vibes dey here so',
-    image: secondMusic,
-    link: ''
-  },
-  {
-    title: 'Vibes dey here so',
-    image: secondMusic,
-    link: ''
-},
+//   {
+//     title: 'Vibes dey here so',
+//     image: ilove,
+//     link: ''
+//   },
+//   {
+//     title: 'Vibes dey here so',
+//     image: ilove,
+//     link: ''
+//   },
+//   {
+//     title: 'Vibes dey here so',
+//     image: ilove,
+//     link: ''
+//   },
+//   {
+//     title: 'Vibes dey here so',
+//     image: ilove,
+//     link: ''
+//   },
+//   {
+//     title: 'Vibes dey here so',
+//     image: ilove,
+//     link: ''
+// },
 ]
 
 
@@ -248,39 +250,39 @@ export const articles = [
     title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS 2.0",
     minRead: "3min read",
     date: "JAN 11, 2024",
-    link: "",
+    link: "https://medium.com/@qudusowoade/the-toll-of-relocation-on-friendships-relationships-2-0-003bdce9fdba",
     linkTitle: "Read on Medium",
   },
   {
     image: article3 ,
     title: "THE TOLL OF RELOCATION ON FRIENDSHIPS & RELATIONSHIPS.",
     minRead: "3min read",
-    date: "JAN 11, 2024",
-    link: "",
+    date: "AUG 3, 2023",
+    link: "https://medium.com/@qudusowoade/relocations-toll-on-friendships-relationships-281fe50abdaf",
     linkTitle: "Read on Medium",
   },
   {
     image: article2 ,
     title: "AFROBEATS SONGS THAT DESERVE A MUSIC VIDEO THAT DON’T HAVE…",
     minRead: "3min read",
-    date: "JAN 11, 2024",
-    link: "",
+    date: "AUG 22, 2023",
+    link: "https://medium.com/@qudusowoade/afrobeats-songs-that-deserve-a-music-video-that-dont-have-1a08f5e9944d",
     linkTitle: "Read on Medium",
   },
   {
     image: article4 ,
     title: "MY STORY - Switched careers & LANDED a full-time ui/ux design role in 11 months",
     minRead: "3min read",
-    date: "JAN 11, 2024",
-    link: "",
+    date: "DEC 11, 2022",
+    link: "https://medium.com/@qudusowoade/my-story-switched-careers-landed-a-full-time-ui-ux-design-role-in-11-months-ab08f47c543c",
     linkTitle: "Read on Medium",
   },
   {
     image: article5 ,
     title: "FEW TIPS NEEDED TO KICKSTART YOUR UI/UX CAREER.",
     minRead: "3min read",
-    date: "JAN 11, 2024",
-    link: "",
+    date: "MAY 12, 2022",
+    link: "https://medium.com/@qudusowoade/few-tips-needed-to-kickstart-your-ui-ux-career-6116fb830c86",
     linkTitle: "Read on Medium",
   },
 
@@ -288,8 +290,8 @@ export const articles = [
     image: article6,
     title: "BIASES IN UX RESEARCH AND HOW TO OVERCOME THEM.",
     minRead: "3min read",
-    date: "JAN 11, 2024",
-    link: "",
+    date: "JAN 21, 2022",
+    link: "https://medium.com/@qudusowoade/biases-in-ux-research-and-how-to-overcome-them-bbe231eeafad",
     linkTitle: "Read on Medium",
   },
 ]

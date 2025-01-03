@@ -24,10 +24,10 @@ const Navbar = () => {
   return (
     <>
       <div className=" z-[100] mx-auto fixed top-[1] w-full ">
-        <div className="flex sm:max-w-screen-xl mx-auto px-[2rem] py-6 flex-row justify-between items-center ">
+        <div className="flex sm:max-w-screen-xl mx-auto px-5 md:px-[2rem] py-6 flex-row justify-between items-center ">
           <Link
             href="/"
-            className="sm:block flex justify-center items-center  sm:mx-0 mx-auto"
+            className="   sm:mx-0 "
           >
             <div>
               {/* <h1 className="text-[48px] font-normal font-tinyBrushy leading-[normal]">
@@ -64,10 +64,10 @@ const Navbar = () => {
             </div>
           </div>
           <a
-            href="https://read.cv/tobiloba.owoade"
+            href="https://docs.google.com/document/d/11wiyXFCkBarWxYcvqqdWChLhKwxxxc6UI-GQ5RKKxIY/edit?tab=t.0"
             target="_blank"
             rel="noopener noreferrer"
-            className="sm:block hidden"
+            className=""
           >
             <div className="flex items-center gap-2">
               <Image

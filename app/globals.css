@@ -8,6 +8,8 @@
 :root {
   --background: #06090f;
   --foreground: #171717;
+  --font-indie-flower: 'Indie Flower', cursive;
+
 }
 .font-Montserrat {
   font-family: "Montserrat";
