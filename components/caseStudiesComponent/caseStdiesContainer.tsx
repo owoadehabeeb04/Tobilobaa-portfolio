@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
+
 const CaseStudiesCompoenent = () => {
   return (
     <div className="py-[40px] px-[2rem] md:py-[80px] gap-[52px] flex flex-col items-center justify-center mx-auto max-w-screen-lg ">
