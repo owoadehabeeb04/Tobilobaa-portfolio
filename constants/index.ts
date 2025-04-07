@@ -14,7 +14,8 @@ import article3 from "../public/assets/images/image 11.svg";
 import article4 from "../public/assets/images/image 12.svg";
 import article5 from "../public/assets/images/image 13.svg";
 import article6 from "../public/assets/images/image 14.svg";
-
+import hatleyImage from "../public/assets/images/hatley.svg"
+import techiaImage from "../public/assets/images/techia.svg"
 export const navItems = [
   {
     text: "Projects",
@@ -33,63 +34,35 @@ export const caseStudies = [
   {
     image: sanlam,
     type: "MOBILE",
-    title: "SANLAM MOBILE APP.",
+    title: "Changing the experience of over 500,000 customers on how to manage their insurance products & make payments.",
     description:
       "A UX Case Study of an Intuitive Insurance Mobile App for Policy Management and Premium Payments.",
 
     skills: ["UX Design", "UI Design", "Prototype", "User Testing"],
     links: [
       {
-        text: "Read Case Study",
+        text: "View Project",
         type: "caseStudy",
         theLink:
           "https://www.figma.com/proto/nvd8qjK8tde7EMqxz51Zbf/NEW-PORTFOLIO-(Copy)?node-id=211-18555&node-type=frame&m=dev&scaling=min-zoom&content-scaling=fixed&page-id=96%3A63&starting-point-node-id=104%3A48"
       },
-      {
-        text: "Playstore",
-        type: "playstore",
-        theLink: ""
-      },
-      {
-        text: "Appstore",
-        type: "appstore",
-        theLink: ""
-      }
-    ]
-  },
-  {
-    image: meetra,
-
-    type: "MOBILE & WEB",
-    title: "MEETRA.",
-    description:
-      "A simple product that helps you find and share rides with others going your way. Whether you’re driving or need a ride, just post, request, or search for a route.",
-
-    skills: [
-      "UX Design",
-      "UI Design",
-      "Prototype",
-      "Web Design",
-      "User Testing"
-    ],
-    links: [
-      {
-        text: "Coming soon...",
-        type: "caseStudy",
-        theLink: ""
-      },
-      {
-        text: "View Website",
-        type: "website",
-        theLink: ""
-      }
+      // {
+      //   text: "Playstore",
+      //   type: "playstore",
+      //   theLink: ""
+      // },
+      // {
+      //   text: "Appstore",
+      //   type: "appstore",
+      //   theLink: ""
+      // }
     ]
   },
   {
     image: runnersHive,
 
     type: "MOBILE",
-    title: "RUNNERS HIVE.",
+    title: "Earn More, Move More: Turning Kilometers into Rewards.",
     description:
       "Runners Hive lets you track your runs, earn coins for every kilometer, and spend them on exclusive rewards. It’s your motivation to run more and achieve more..",
 
@@ -102,17 +75,46 @@ export const caseStudies = [
     ],
     links: [
       {
-        text: "Coming soon...",
+        text: "View Project",
         type: "caseStudy",
         theLink: ""
       }
     ]
   },
   {
+    image: meetra,
+
+    type: "MOBILE & WEB",
+    title: "Share the Ride: Connect, Post, and Find Trips with Ease.",
+    description:
+      "A simple product that helps you find and share rides with others going your way. Whether you’re driving or need a ride, just post, request, or search for a route.",
+
+    skills: [
+      "UX Design",
+      "UI Design",
+      "Prototype",
+      "Web Design",
+      "User Testing"
+    ],
+    links: [
+      {
+        text: "View Project",
+        type: "caseStudy",
+        theLink: ""
+      },
+      // {
+      //   text: "View Website",
+      //   type: "website",
+      //   theLink: ""
+      // }
+    ]
+  },
+
+  {
     image: asset,
 
     type: "WEB",
-    title: "ASSET MANAGEMENT.",
+    title: "Scaling Asset Management: Tracking 10,000+ Assets Across 20+ Locations.",
     description:
       "A streamlined tool for managing company assets, tracking usage, and maintaining repair records (all in one place).",
 
@@ -125,54 +127,63 @@ export const caseStudies = [
     ],
     links: [
       {
-        text: "Coming soon...",
+        text: "View Project",
         type: "caseStudy",
         theLink: ""
       },
-      {
-        text: "View Website",
-        type: "website",
-        theLink: ""
-      }
+      // {
+      //   text: "View Website",
+      //   type: "website",
+      //   theLink: ""
+      // }
     ]
   },
-  {
-    image: hatley,
+  // {
+  //   image: hatley,
 
-    type: "MOBILE",
-    title: "HATLEY.",
-    description:
-      "An e-commerce app that makes it easy to shop for both men’s and women’s clothing in one place.",
+  //   type: "MOBILE",
+  //   title: "HATLEY.",
+  //   description:
+  //     "An e-commerce app that makes it easy to shop for both men’s and women’s clothing in one place.",
 
-    skills: ["UX Design", "UI Design", "Prototype", "User Testing"],
+  //   skills: ["UX Design", "UI Design", "Prototype", "User Testing"],
 
-    links: [
-      {
-        text: "Coming soon...",
-        type: "caseStudy",
-        theLink: ""
-      }
-    ]
-  }
+  //   links: [
+  //     {
+  //       text: "Coming soon...",
+  //       type: "caseStudy",
+  //       theLink: ""
+  //     }
+  //   ]
+  // }
 ];
 
 export const tobiProjects = [
   {
     image: cupcake,
-    title: "BAKELY.",
+    title: "E-COMMERCE APP FOR BUYING CAKES & CUP CAKES.",
     description:
       "An e-commerce app that helps you order cakes , cupcakes and even schedule the cakes you want to order.",
     type: "behance",
     theLink: "https://www.behance.net/tobilobaowoade"
   },
   {
-    image: sanlamwebsite,
-    title: "SANLAM INSURANCE WEBSITE.",
+    image: hatleyImage,
+    title: "E-commerce app for male & Female wears.",
+    description:
+      "A sales website that helps new customers buy life insurance policies and fill their KYCs.",
+    type: "behance",
+    theLink: "https://www.behance.net/tobilobaowoade"
+  },
+  {
+    image: techiaImage,
+    title: "A WEBSITE DESIGNED FOR A SOFTWARE SOLUTIONS COMPANY.",
     description:
       "A sales website that helps new customers buy life insurance policies and fill their KYCs.",
     type: "website",
-    theLink: "https://buyinsurance.sanlam.com.ng/"
-  }
+    theLink: ""
+  },
+
 ];
 
 

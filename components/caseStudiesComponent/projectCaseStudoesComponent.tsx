@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { ArrowUpRight } from "lucide-react";
 const ProjectsCaseStudy = () => {
   return (
     <div className="py-[48px] md:py-[80px] gap-[52px] flex flex-col items-center justify-center  max-w-screen-xl  px-[0rem]  ">
@@ -34,9 +35,9 @@ const ProjectsCaseStudy = () => {
                 {caseStudies?.title}
               </h1>
 
-              <p className="text-[#C9CFD9] md:text-base text-[14px] lg:text-[18px] font-normal leading-[normal] pt-[6px] md:pt-[12px] font-Beginning">
+              {/* <p className="text-[#C9CFD9] md:text-base text-[14px] lg:text-[18px] font-normal leading-[normal] pt-[6px] md:pt-[12px] font-Beginning">
                 {caseStudies?.description}
-              </p>
+              </p> */}
               <div className="flex flex-row flex-wrap pt-[14px] md:pt-[24px] gap-4 items-center ">
                 {caseStudies?.skills?.map((skills, index) => (
                   <p
@@ -60,7 +61,7 @@ const ProjectsCaseStudy = () => {
                       }  text-[14px] md:text-[16px] flex flex-row gap-1 items-center   font-Beginning leading-[normal] font-normal text-center   `}
                     >
                       {link?.text}
-                      {index === 0 && <FaExternalLinkAlt />}
+                      {index === 0 && <ArrowUpRight />}
                     </div>
                   </Link>
                 </div>

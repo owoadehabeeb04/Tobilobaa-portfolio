@@ -7,6 +7,7 @@ import Image from "next/image";
 import ProjectsCaseStudy from "@/components/caseStudiesComponent/projectCaseStudoesComponent";
 import dot from "../../public/assets/images/dot.svg";
 import TobiProjects from "@/components/caseStudiesComponent/tobiProjects";
+import OtherProjectAndWebsites from "@/components/homePageComponent/OtherProjectAndWebsites";
 const Projects = () => {
   const [tab, setTab] = useState("design-projects");
   return (
@@ -29,7 +30,6 @@ const Projects = () => {
           height={56.396}
           alt="productdesign"
           className="max-[768px]:w-[10%] "
-
         />
       </div>
       <Image
@@ -50,7 +50,7 @@ const Projects = () => {
         <h1 className="text-[#fff] pt-[45px]  lg:pt-[90px] text-center  font-tinyBrushy  text-[24px] md:text-[28px] lg:text-[32px] font-normal uppercase leading-[normal] ">
           CASE STUDIES.
         </h1>
-        <div className="flex  p-2 mx-auto  mt-5 rounded-[300px] border border-solid border-[#fff] backdrop-blur-[10px] bg-[#29222240] w-fit  justify-center items-center gap-4 ">
+        {/* <div className="flex  p-2 mx-auto  mt-5 rounded-[300px] border border-solid border-[#fff] backdrop-blur-[10px] bg-[#29222240] w-fit  justify-center items-center gap-4 ">
           <div
             onClick={() => setTab("design-projects")}
             className={`cursor-pointer ${
@@ -71,17 +71,14 @@ const Projects = () => {
           >
             Webflow Projects
           </div>
-        </div>
+        </div> */}
         {tab === "design-projects" && <ProjectsCaseStudy />}{" "}
         {tab === "webflow-projects" && <TobiProjects />}{" "}
       </div>
 
       {tab === "design-projects" && (
         <div>
-          <h1 className="text-[#fff] pt-[32px] md:pt-[90px] font-tinyBrushy text-[32px] md:text-start text-center  font-normal uppercase leading-[normal] ">
-            My Projects.
-          </h1>
-          <TobiProjects />{" "}
+          <OtherProjectAndWebsites />{" "}
         </div>
       )}
     </div>
