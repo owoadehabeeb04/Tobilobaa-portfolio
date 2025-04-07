@@ -2,7 +2,6 @@ import { caseStudies } from "@/constants";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { ArrowUpRight } from "lucide-react";
 const ProjectsCaseStudy = () => {
   return (

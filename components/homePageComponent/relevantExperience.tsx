@@ -74,7 +74,7 @@ const RelevantExperience = () => {
               <div>
                 <ul className="list-disc flex pl-4 flex-col gap-3 md:gap-4">
                   <li className="text-[#C9CFD9] font-Beginning text-sm sm:text-base font-normal leading-[normal]">
-                    Implemented the 'Sanlam Nigeria mobile app' that helps about
+                    Implemented the &apos;Sanlam Nigeria mobile app&apos; that helps about
                     500,000+ customers track their Insurance policies, make
                     payments on their policies, set up e-mandate (direct debit)
                     and reach customer care. The application has over 20,200

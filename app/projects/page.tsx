@@ -1,15 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 
 import productdesign from "../../public/assets/images/Component 8.svg";
 import uiUx from "../../public/assets/images/Group 3.svg";
 import Image from "next/image";
 import ProjectsCaseStudy from "@/components/caseStudiesComponent/projectCaseStudoesComponent";
 import dot from "../../public/assets/images/dot.svg";
-import TobiProjects from "@/components/caseStudiesComponent/tobiProjects";
 import OtherProjectAndWebsites from "@/components/homePageComponent/OtherProjectAndWebsites";
 const Projects = () => {
-  const [tab, setTab] = useState("design-projects");
+  const tab = "design-projects";
   return (
     <div className="max-w-screen-xl mx-auto px-[2rem] relative py-[4rem]">
       <div className="flex flex-row items-center gap-[23px] pt-[24px] md:pt-[88px]">
@@ -73,7 +72,7 @@ const Projects = () => {
           </div>
         </div> */}
         {tab === "design-projects" && <ProjectsCaseStudy />}{" "}
-        {tab === "webflow-projects" && <TobiProjects />}{" "}
+        {/* {tab === "webflow-projects" && <TobiProjects />}{" "x} */}
       </div>
 
       {tab === "design-projects" && (

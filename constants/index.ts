@@ -44,7 +44,7 @@ export const caseStudies = [
         text: "View Project",
         type: "caseStudy",
         theLink:
-          "https://www.figma.com/proto/nvd8qjK8tde7EMqxz51Zbf/NEW-PORTFOLIO-(Copy)?node-id=211-18555&node-type=frame&m=dev&scaling=min-zoom&content-scaling=fixed&page-id=96%3A63&starting-point-node-id=104%3A48"
+          "/sanlam"
       },
       // {
       //   text: "Playstore",
@@ -77,7 +77,7 @@ export const caseStudies = [
       {
         text: "View Project",
         type: "caseStudy",
-        theLink: ""
+        theLink: "/runners-hive"
       }
     ]
   },
@@ -100,7 +100,7 @@ export const caseStudies = [
       {
         text: "View Project",
         type: "caseStudy",
-        theLink: ""
+        theLink: "/meetra"
       },
       // {
       //   text: "View Website",
@@ -112,12 +112,10 @@ export const caseStudies = [
 
   {
     image: asset,
-
     type: "WEB",
     title: "Scaling Asset Management: Tracking 10,000+ Assets Across 20+ Locations.",
     description:
       "A streamlined tool for managing company assets, tracking usage, and maintaining repair records (all in one place).",
-
     skills: [
       "UX Design",
       "UI Design",
@@ -129,7 +127,7 @@ export const caseStudies = [
       {
         text: "View Project",
         type: "caseStudy",
-        theLink: ""
+        theLink: "/"
       },
       // {
       //   text: "View Website",
