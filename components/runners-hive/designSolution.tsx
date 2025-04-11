@@ -59,8 +59,8 @@ const DesignSolution = () => {
         "Marketplace without any product yet."
     },
     { image: marketPlace2, title: " Marketplace with products live here." },
-    { image: marketPlace3, title: "Add an emergency contact" },
-    { image: marketPlace4, title: "Run recorded & the path recorded.." },
+    { image: marketPlace3, title: "Product Information" },
+    { image: marketPlace4, title: "Run recorded & the path recorded." },
     { image: marketPlace5, title: "Schedule a run for a later date" },
     { image: marketPlace6, title: "Add a Shoe." },
   
