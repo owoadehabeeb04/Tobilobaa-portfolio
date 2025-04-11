@@ -179,7 +179,7 @@ export const tobiProjects = [
     description:
       "A sales website that helps new customers buy life insurance policies and fill their KYCs.",
     type: "website",
-    theLink: ""
+    theLink: "https://techia.ng/"
   },
 
 ];

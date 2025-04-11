@@ -17,9 +17,12 @@ const MusicPlaylist = () => {
           {musicPlaylist.map((music, index) => (
             <div
               key={index}
-              className="snap-start shrink-0 max-[640px]:w-[240px]"
+              className="snap-start cursor-pointer shrink-0 max-[640px]:w-[240px]"
             >
-              <div className="flex flex-col gap-4">
+               <Link
+                  href={music?.link}
+                  className="text-[#FFA17A] flex items-center   font-beginning text-base font-normal leading-[normal]"
+                >  <div className="flex flex-col gap-4">
                 <div className="relative w-full sm:h-[281px] max-[640px]:w-full">
                   <Image
                     src={music?.image}
@@ -29,14 +32,14 @@ const MusicPlaylist = () => {
                     className="max-[640px]:w-full sm:h-[281px] object-cover"
                   />
                 </div>
-                <Link
-                  href={music?.link}
-                  className="text-[#C9CFD9] flex items-center  font-beginning text-base font-normal leading-[normal]"
-                >
+                <div className="flex flex-row items-center gap-2">
+             
                   {music?.title}
                   <ArrowUpRight size={16} />
-                </Link>
+                  </div>
+            
               </div>
+              </Link>
             </div>
           ))}
         </div>

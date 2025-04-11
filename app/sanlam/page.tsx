@@ -56,7 +56,7 @@ const SanlamCaseStudy = () => {
       </div>
 
       {/* special details */}
-      <div className="px-[16px] sm:px-[40px] md:px-[80px] lg:px-[163px] pt-[4rem] sm:pt-[6rem] md:pt-[8rem]">
+      <div className="px-[16px] max-w-[1311px] mx-auto sm:px-[40px] md:px-[80px] lg:px-[163px] pt-[4rem] sm:pt-[6rem] md:pt-[8rem]">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-[20px] sm:gap-[30px]">
           <div className="flex flex-col gap-[15px] sm:gap-[28px]">
             <h1 className="text-[#C9CFD9] font-normal leading-[normal] font-tinyBrushy text-[14px] sm:text-base">
@@ -752,8 +752,8 @@ const SanlamCaseStudy = () => {
         </div>
 
         <div className="pt-[80px] sm:pt-[100px] md:pt-[143px] pb-[40px] sm:pb-[60px] md:pb-[80px]">
-          <a href="#" className="block hover:opacity-80 transition-opacity">
-            <p className="underline text-[#fff] text-[18px] sm:text-[24px] md:text-[32px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed  text-left">
+          <a href="/runner-hive" className="block hover:opacity-80 transition-opacity">
+            <p className="underline font-Beginning text-[#fff] text-[18px] sm:text-[24px] md:text-[32px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed  text-left">
               View Next Project - Earn More, Move More: Turning Kilometers into Rewards
             </p>
           </a>

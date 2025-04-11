@@ -25,7 +25,7 @@ const About = () => {
         </h1>
         <div className="md:pt-[24px] pt-[20px] lg:pt-[32px] mx-auto max-w-[1512px] justify-center   w-full flex items-center gap-[32px] ">
           <div>
-            <p className="text-start sm:text-center font-Beginning text-[#C9CFD9]  text-base md:text-[20px] lg:text-2xl  font-normal leading-[normal]">
+            <p className="text-start sm:text-start font-Beginning text-[#C9CFD9]  text-base md:text-[20px] lg:text-2xl  font-normal leading-[normal]">
               I’m Owoade Tobiloba, a UX designer & Webflow Developer based in
               Toronto, Canada, with 3 years of experience in the field.
               Throughout my career, I ’ve had the opportunity to work on several
@@ -47,13 +47,13 @@ const About = () => {
           OTHER INTERESTS .
         </h1>
         <div className="flex flex-col gap-6">
-          <p className="text-[#C9CFD9] font-Beginning text-base sm:text-[1.15rem]  md:text-xl  lg:text-2xl font-normal leading-[normal]">
+          {/* <p className="text-[#C9CFD9] font-Beginning text-base sm:text-[1.15rem]  md:text-xl  lg:text-2xl font-normal leading-[normal]">
             Outside of work, I&apos;m an avid gamer, with a particular love for FIFA.
             Podcasts are my go-to while working, providing a great balance
             between focus and entertainment. When I unwind, I often find myself
             watching movies, especially Bollywood films, though I also enjoy
             very good Nollywood productions.
-          </p>
+          </p> */}
           <p className="text-[#C9CFD9] font-Beginning text-base sm:text-[1.15rem]  md:text-xl  lg:text-2xl font-normal leading-[normal]">            Outside of work, I&apos;m an avid gamer, with a particular love for FIFA.
             Podcasts are my go-to while working, providing a great balance
             between focus and entertainment. When I unwind, I often find myself

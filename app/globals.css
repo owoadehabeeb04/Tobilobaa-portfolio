@@ -155,3 +155,14 @@ html {
 .font-tinyBrushy {
   font-family: "Tiny Brushy", sans-serif;
 }
+.whoRunner {
+  background: "linear-gradient(100deg, rgba(102, 112, 133, 0.10) 2.31%, rgba(152, 162, 179, 0.10) 52.72%, rgba(71, 84, 103, 0.10) 86.04%)"
+
+}
+
+@media (max-width: 640px) {
+  .whoRunner {
+    background: none;
+  
+  } 
+}
