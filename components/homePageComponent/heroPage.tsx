@@ -77,7 +77,7 @@ const HeroPage = () => {
           width={137}
           height={123}
           alt=""
-        />
+      />
       </div>
       <div className="description  md:mt-0 mt-32 flex items-center md:translate-y-[-4rem] pb-[0rem]">
         <ul className="flex text-center  text-base md:text-2xl lg:text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center">

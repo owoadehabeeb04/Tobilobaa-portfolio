@@ -58,8 +58,8 @@ const CaseStudiesCompoenent = () => {
                       } text-[12px] sm:text-[14px] md:text-[16px] flex flex-row gap-1 items-center font-Beginning leading-[normal] font-normal text-center`}
                     >
                       {link?.text}
-                      {index === 0 && <ArrowUpRight size={16} />}
-                    </div>
+                      {index === 0 && !link?.text?.includes("Coming soon") && <ArrowUpRight size={16} />}
+                      </div>
                   </Link>
                 </div>
               ))}

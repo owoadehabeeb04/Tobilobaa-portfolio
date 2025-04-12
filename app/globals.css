@@ -51,6 +51,23 @@ html {
   backdrop-filter: blur(10px);
 }
 
+
+.music-playlist-scroll {
+  animation: scrolled 30s linear infinite;
+}
+
+/* Pause animation on hover for better user interaction */
+.music-playlist-scroll:hover {
+  animation-play-state: paused;
+}
+@keyframes scrolled {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-340px * 15)); /* Adjust based on number of items in musicPlaylist */
+  }
+}
 .description {
   overflow: hidden;
   /* background: white; */

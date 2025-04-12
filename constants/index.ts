@@ -98,9 +98,9 @@ export const caseStudies = [
     ],
     links: [
       {
-        text: "View Project",
+        text: "Coming soon...",
         type: "caseStudy",
-        theLink: "/meetra"
+        theLink: "/"
       },
       // {
       //   text: "View Website",
@@ -125,7 +125,7 @@ export const caseStudies = [
     ],
     links: [
       {
-        text: "View Project",
+        text: "Coming soon...",
         type: "caseStudy",
         theLink: "/"
       },
