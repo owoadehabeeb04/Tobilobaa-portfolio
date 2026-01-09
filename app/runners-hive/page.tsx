@@ -1,4 +1,4 @@
-import AdminSection from "@/components/runners-hive/adminSection";
+// import AdminSection from "@/components/runners-hive/adminSection";
 import DesignSolution from "@/components/runners-hive/designSolution";
 import RunnersHiveHero from "@/components/runners-hive/hero";
 import ProjectScope from "@/components/runners-hive/projectScope";
@@ -21,7 +21,7 @@ const RunnersHive = () => {
         <DesignSolution />
         <UserTesting />
       </div>
-      <AdminSection />
+      {/* <AdminSection /> */}
       <div className=" mx-auto px-[16px] sm:px-[24px] md:px-[48px] lg:px-[103px]  max-w-[1311px]">
         <StyleGuide />
         <WhatYouLearnt />
