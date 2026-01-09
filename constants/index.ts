@@ -6,7 +6,7 @@ import hatley from "../public/assets/images/Hatley export.png";
 import cupcake from "../public/assets/images/MacBook Pro 14_ - 2.png";
 import sanlamwebsite from "../public/assets/images/Frame 1001.png";
 import topSongs from "../public/assets/images/Screenshot 2025-01-03 at 7.02.52 PM.png";
-import ilove from "../public/assets/images/828E9457-1C0C-43CF-A40C-DD7EA6403E6E.jpeg";
+// Removed missing image file
 import playlistCurated from "../public/assets/images/B0F32B09-7E2D-4BFB-A6DE-B0CCE5BF5BBE.png"
 import article1 from "../public/assets/images/image 9.svg";
 import article2 from "../public/assets/images/image 10.svg";
@@ -205,7 +205,7 @@ export const musicPlaylist = [
   },
   {
     title: 'I Love ❤️',
-    image: ilove,
+    image: playlistCurated,
     link: 'https://open.spotify.com/playlist/2wvpnthNZ2AFZeNA4GAEBR?si=nkvCzqKtTWelyA6LlhEcIg&pi=u-NPeRwsg1RkuE&nd=1&dlsi=e331a0f1a5074894'
   },
   {
