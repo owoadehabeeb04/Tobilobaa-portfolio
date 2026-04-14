@@ -7,6 +7,8 @@ import resumeIcon from "../../public/assets/images/Icon.svg";
 import { navItems } from "@/constants";
 import { usePathname } from "next/navigation";
 
+const RESUME_FILE_PATH = "/assets/images/Tobiloba%20Ux%20design%20resume.pdf";
+
 const Navbar = () => {
   const pathname = usePathname();
   console.log(pathname);
@@ -64,7 +66,7 @@ const Navbar = () => {
             </div>
           </div>
           <a
-            href="https://docs.google.com/document/d/11wiyXFCkBarWxYcvqqdWChLhKwxxxc6UI-GQ5RKKxIY/edit?tab=t.0"
+            href={RESUME_FILE_PATH}
             target="_blank"
             rel="noopener noreferrer"
             className=""

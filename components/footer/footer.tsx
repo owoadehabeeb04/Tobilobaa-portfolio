@@ -10,21 +10,14 @@ import footerIcon from "../../public/assets/images/footerIcon.svg";
 import behance from "../../public/assets/images/behanceIcon.svg";
 import { usePathname } from "next/navigation";
 
-const Footer = () => {
-  const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/assets/images/Tobiloba UX Design Resume 1.pdf';
-    link.download = 'Tobiloba UX Design Resume 1.pdf';
-    link.target = '_blank'; // Add this to open in new tab
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+const RESUME_FILE_PATH = "/assets/images/Tobiloba%20Ux%20design%20resume.pdf";
+const RESUME_DOWNLOAD_NAME = "Tobiloba_Ux_Design_Resume.pdf";
 
+const Footer = () => {
   const socialIcons = [
     {
       text: "Resume",
-      link: "",
+      link: RESUME_FILE_PATH,
       image: resumeIcon,
       isDownload: true
     },
@@ -93,9 +86,12 @@ const Footer = () => {
           <div className="sm:flex hidden justify-center gap-[8px] sm:gap-[12px] items-center">
             {socialIcons.map((social, index) =>
               social.isDownload ? (
-                <button
+                <a
                   key={index}
-                  onClick={handleResumeDownload}
+                  href={social?.link}
+                  download={RESUME_DOWNLOAD_NAME}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:opacity-80 transition-opacity"
                 >
                   <div className="flex gap-[4px] items-center">
@@ -110,7 +106,7 @@ const Footer = () => {
                       {social?.text}
                     </p>
                   </div>
-                </button>
+                </a>
               ) : (
                 <Link
                   href={social?.link}
@@ -138,9 +134,12 @@ const Footer = () => {
         <div className="flex sm:hidden justify-center mt-[24px] gap-[12px] items-center flex-wrap">
           {socialIcons.map((social, index) =>
             social.isDownload ? (
-              <button
+              <a
                 key={index}
-                onClick={handleResumeDownload}
+                href={social?.link}
+                download={RESUME_DOWNLOAD_NAME}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:opacity-80 transition-opacity"
               >
                 <div className="flex gap-[6px] items-center">
@@ -155,7 +154,7 @@ const Footer = () => {
                     {social?.text}
                   </p>
                 </div>
-              </button>
+              </a>
             ) : (
               <Link
                 href={social?.link}
