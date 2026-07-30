@@ -3,11 +3,11 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import logo from "../../public/assets/images/Group 1031.svg";
-import resumeIcon from "../../public/assets/images/Icon.svg";
+// import resumeIcon from "../../public/assets/images/Icon.svg";
 import { navItems } from "@/constants";
 import { usePathname } from "next/navigation";
 
-const RESUME_FILE_PATH = "/assets/images/Tobiloba%20Ux%20design%20resume.pdf";
+// const RESUME_FILE_PATH = "/assets/images/Tobiloba%20Ux%20design%20resume.pdf";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -65,25 +65,7 @@ const Navbar = () => {
               })}
             </div>
           </div>
-          <a
-            href={RESUME_FILE_PATH}
-            target="_blank"
-            rel="noopener noreferrer"
-            className=""
-          >
-            <div className="flex items-center gap-2">
-              <Image
-                src={resumeIcon}
-                width={15}
-                height={15}
-                alt="resume icon"
-              />
 
-              <h1 className="font-beginning text-[1.5rem] font-normal leading-[normal] text-[#fff]">
-                Resume
-              </h1>
-            </div>
-          </a>
         </div>
       </div>
 
@@ -117,5 +99,26 @@ const Navbar = () => {
     </>
   );
 };
+
+
+          // <a
+          //   href={RESUME_FILE_PATH}
+          //   target="_blank"
+          //   rel="noopener noreferrer"
+          //   className=""
+          // >
+          //   <div className="flex items-center gap-2">
+          //     <Image
+          //       src={resumeIcon}
+          //       width={15}
+          //       height={15}
+          //       alt="resume icon"
+          //     />
+
+          //     <h1 className="font-beginning text-[1.5rem] font-normal leading-[normal] text-[#fff]">
+          //       Resume
+          //     </h1>
+          //   </div>
+          // </a>
 
 export default Navbar;

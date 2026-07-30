@@ -10,17 +10,22 @@ import footerIcon from "../../public/assets/images/footerIcon.svg";
 import behance from "../../public/assets/images/behanceIcon.svg";
 import { usePathname } from "next/navigation";
 
-const RESUME_FILE_PATH = "/assets/images/Tobiloba%20Ux%20design%20resume.pdf";
+// const RESUME_FILE_PATH = "/assets/images/Tobiloba%20Ux%20design%20resume.pdf";
 const RESUME_DOWNLOAD_NAME = "Tobiloba_Ux_Design_Resume.pdf";
-
+type SocialIcon = {
+  text: string;
+  link: string;
+  image: string;
+  isDownload?: boolean;
+};
 const Footer = () => {
-  const socialIcons = [
-    {
-      text: "Resume",
-      link: RESUME_FILE_PATH,
-      image: resumeIcon,
-      isDownload: true
-    },
+  const socialIcons: SocialIcon[] = [
+    // {
+    //   text: "Resume",
+    //   link: RESUME_FILE_PATH,
+    //   image: resumeIcon,
+    //   isDownload: true
+    // },
     {
       text: "Twitter",
       link: "https://x.com/Kaykeed_",
