@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-import resumeIcon from "../../public/assets/images/Icon.svg";
+// import resumeIcon from "../../public/assets/images/Icon.svg";
 import instagram from "../../public/assets/images/instagram.svg";
 import linkedln from "../../public/assets/images/linkedln.svg";
 import twitter from "../../public/assets/images/twitter.svg";
