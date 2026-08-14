@@ -84,7 +84,7 @@ const DesignSolution = () => {
   
   return (
     <div className="pt-[80px] sm:pt-[100px] md:pt-[141px]">
-      <h1 className="text-[32px] sm:text-[40px] md:text-[48px] font-normal leading-[normal] font-tinyBrushy text-[#C9CFD9]">
+      <h1 className="text-[32px] sm:text-[40px] md:text-[48px] font-normal leading-[normal] font-tinyBrushy text-body">
         The Design Solution
       </h1>
 
@@ -96,28 +96,28 @@ const DesignSolution = () => {
         <div className="w-full">
           <div className="flex sm:hidden items-center gap-[8px] mb-[12px]">
             <div>{casualIcon}</div>
-            <h1 className="text-[#fff] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+            <h1 className="text-title font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
               Run Tracking & Activity Recording
             </h1>
           </div>
           
-          <h1 className="hidden sm:block text-[#fff] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+          <h1 className="hidden sm:block text-title font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
             Run Tracking & Activity Recording
           </h1>
           
           <div className="pl-[0] sm:pl-[28px] pt-[16px] sm:pt-[20px]">
-            <h1 className="text-[#C9CFD9] text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
+            <h1 className="text-body text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
               Problem
             </h1>
-            <p className="pt-[8px] pb-[16px] text-[#fff] text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
+            <p className="pt-[8px] pb-[16px] text-title text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
               Users needed an intuitive way to track their runs, measure their
               distance, and earn points based on performance.
             </p>
 
-            <h1 className="text-[#C9CFD9] text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
+            <h1 className="text-body text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
               Solution
             </h1>
-            <p className="pt-[8px] pb-[16px] text-[#fff] text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
+            <p className="pt-[8px] pb-[16px] text-title text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
               Designed a GPS-based run tracker that calculates distance covered,
               route mapping, and real-time stats like pace, calories burned, and
               coins earned.
@@ -131,7 +131,7 @@ const DesignSolution = () => {
         {mockups.map((mockup, index) => (
           <div key={index} className="flex flex-col">
             <div className="h-[60px] sm:h-[50px] md:h-[40px] flex items-start justify-center mb-[12px] sm:mb-[14px] md:mb-[16px]">
-              <p className="text-[#FFF] text-center font-Beginning text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-normal">
+              <p className="text-title text-center font-Beginning text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-normal">
                 {mockup.title}
               </p>
             </div>
@@ -156,27 +156,27 @@ const DesignSolution = () => {
         <div className="w-full">
           <div className="flex sm:hidden items-center gap-[8px] mb-[12px]">
             <div>{casualIcon}</div>
-            <h1 className="text-[#fff] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+            <h1 className="text-title font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
               Marketplace & Rewards System
             </h1>
           </div>
           
-          <h1 className="hidden sm:block text-[#fff] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+          <h1 className="hidden sm:block text-title font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
             Marketplace & Rewards System
           </h1>
           
           <div className="pl-[0] sm:pl-[28px] pt-[16px] sm:pt-[20px]">
-            <h1 className="text-[#C9CFD9] text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
+            <h1 className="text-body text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
               Problem
             </h1>
-            <p className="pt-[8px] pb-[16px] text-[#fff] text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
+            <p className="pt-[8px] pb-[16px] text-title text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
               Users needed motivation to run, and an incentive system was required.
             </p>
 
-            <h1 className="text-[#C9CFD9] text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
+            <h1 className="text-body text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
               Solution
             </h1>
-            <p className="pt-[8px] pb-[16px] text-[#fff] text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
+            <p className="pt-[8px] pb-[16px] text-title text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
               Created a marketplace where users can exchange points earned from running for real-world products.
             </p>
           </div>
@@ -188,7 +188,7 @@ const DesignSolution = () => {
         {mockups2.map((mockup, index) => (
           <div key={index} className="flex flex-col">
             <div className="h-[60px] sm:h-[50px] md:h-[40px] flex items-start justify-center mb-[12px] sm:mb-[14px] md:mb-[16px]">
-              <p className="text-[#FFF] text-center font-Beginning text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-normal">
+              <p className="text-title text-center font-Beginning text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-normal">
                 {mockup.title}
               </p>
             </div>
@@ -213,27 +213,27 @@ const DesignSolution = () => {
         <div className="w-full">
           <div className="flex sm:hidden items-center gap-[8px] mb-[12px]">
             <div>{casualIcon}</div>
-            <h1 className="text-[#fff] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+            <h1 className="text-title font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
               Community & Activity Tracking
             </h1>
           </div>
           
-          <h1 className="hidden sm:block text-[#fff] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+          <h1 className="hidden sm:block text-title font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
             Community & Activity Tracking
           </h1>
           
           <div className="pl-[0] sm:pl-[28px] pt-[16px] sm:pt-[20px]">
-            <h1 className="text-[#C9CFD9] text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
+            <h1 className="text-body text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
               Problem
             </h1>
-            <p className="pt-[8px] pb-[16px] text-[#fff] text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
+            <p className="pt-[8px] pb-[16px] text-title text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
               Users wanted to connect, compete, and stay accountable
             </p>
 
-            <h1 className="text-[#C9CFD9] text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
+            <h1 className="text-body text-[20px] sm:text-[22px] md:text-[24px] font-normal leading-[normal] font-tinyBrushy">
               Solution
             </h1>
-            <p className="pt-[8px] pb-[16px] text-[#fff] text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
+            <p className="pt-[8px] pb-[16px] text-title text-[14px] sm:text-[15px] md:text-base leading-[normal] font-normal font-Beginning">
               Designed a feature where users can see a leaderboard, create groups & have private leaderboards while they track leaderboard stats.
             </p>
           </div>
@@ -245,7 +245,7 @@ const DesignSolution = () => {
         {mockups3.map((mockup, index) => (
           <div key={index} className="flex flex-col">
             <div className="h-[60px] sm:h-[50px] md:h-[40px] flex items-start justify-center mb-[12px] sm:mb-[14px] md:mb-[16px]">
-              <p className="text-[#FFF] text-center font-Beginning text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-normal">
+              <p className="text-title text-center font-Beginning text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-normal">
                 {mockup.title}
               </p>
             </div>

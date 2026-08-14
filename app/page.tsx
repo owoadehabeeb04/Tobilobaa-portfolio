@@ -1,15 +1,13 @@
-import CaseStudies from "@/components/homePageComponent/caseStudies";
+import AboutMeIntro from "@/components/about-me/aboutMeIntro";
+import FeaturedWork from "@/components/homePageComponent/featuredWork";
 import HeroPage from "@/components/homePageComponent/heroPage";
-import OtherProjectAndWebsites from "@/components/homePageComponent/OtherProjectAndWebsites";
-import RelevantExperience from "@/components/homePageComponent/relevantExperience";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <HeroPage />
-      <CaseStudies />
-      <OtherProjectAndWebsites />
-      <RelevantExperience />
-    </div>
+      <AboutMeIntro showCta />
+      <FeaturedWork />
+    </main>
   );
 }

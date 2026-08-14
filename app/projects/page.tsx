@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <div className="max-w-screen-xl mx-auto px-[2rem] relative py-[4rem]">
       <div className="flex flex-row items-center gap-[23px] pt-[24px] md:pt-[88px]">
-        <h1 className="text-[#fff] font-tinyBrushy md:text-[40px] sm:text-[36px] text-[32px]  lg:text-[48px] font-normal uppercase ">
+        <h1 className="text-title font-tinyBrushy md:text-[40px] sm:text-[36px] text-[32px]  lg:text-[48px] font-normal uppercase ">
           MY PROJECTS
         </h1>
         <Image
@@ -38,7 +38,7 @@ const Projects = () => {
         width={4}
         height={4}
       />
-      <p className="text-[#C9CFD9] font-Beginning text-base  md:text-[18px] lg:text-[20px] font-normal leading-[32px] ">
+      <p className="text-body font-Beginning text-base  md:text-[18px] lg:text-[20px] font-normal leading-[32px] ">
         I have worked on different projects since I started UX design in 2021
         and I have a few here to show. Some of them are live on Appstore &
         Playstore while some are live and being used already on websites. Some
@@ -46,7 +46,7 @@ const Projects = () => {
       </p>
 
       <div>
-        <h1 className="text-[#fff] pt-[45px]  lg:pt-[90px] text-center  font-tinyBrushy  text-[24px] md:text-[28px] lg:text-[32px] font-normal uppercase leading-[normal] ">
+        <h1 className="text-title pt-[45px]  lg:pt-[90px] text-center  font-tinyBrushy  text-[24px] md:text-[28px] lg:text-[32px] font-normal uppercase leading-[normal] ">
           CASE STUDIES.
         </h1>
         {/* <div className="flex  p-2 mx-auto  mt-5 rounded-[300px] border border-solid border-[#fff] backdrop-blur-[10px] bg-[#29222240] w-fit  justify-center items-center gap-4 ">
@@ -54,8 +54,8 @@ const Projects = () => {
             onClick={() => setTab("design-projects")}
             className={`cursor-pointer ${
               tab === "design-projects"
-                ? "text-[#FFA17A] rounded-[100px] bg-[#202328]  md:bg-[#fff] py-2  px-5"
-                : "text-[#C9CFD9]"
+                ? "text-accent rounded-[100px] bg-surface-2 py-2  px-5"
+                : "text-body"
             } py-2  px-5  text-[12px] md:text-base font-normal font-Beginning leading-[normal]`}
           >
             Design Projects
@@ -64,8 +64,8 @@ const Projects = () => {
             onClick={() => setTab("webflow-projects")}
             className={`cursor-pointer ${
               tab === "webflow-projects"
-                ? "text-[#FFA17A] rounded-[100px] bg-[#fff] py-2  px-5"
-                : "text-[#C9CFD9]"
+                ? "text-accent rounded-[100px] bg-surface-2 py-2  px-5"
+                : "text-body"
             }  py-2  px-5 text-[12px] md:text-base font-normal font-Beginning leading-[normal]`}
           >
             Webflow Projects

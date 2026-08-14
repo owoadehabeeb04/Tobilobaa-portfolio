@@ -45,11 +45,11 @@ const UserTesting = () => {
   ];
   return (
     <div className="pt-[80px] sm:pt-[100px] md:pt-[150px]">
-      <h1 className="text-[#C9CFD9] font-tinyBrushy text-[32px] sm:text-[40px] md:text-[48px] font-normal leading-[normal]">
+      <h1 className="text-body font-tinyBrushy text-[32px] sm:text-[40px] md:text-[48px] font-normal leading-[normal]">
         {" "}
         User Testing{" "}
       </h1>
-      <p className="pt-[16px] sm:pt-[24px] md:pt-[32px] font-Beginning text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+      <p className="pt-[16px] sm:pt-[24px] md:pt-[32px] font-Beginning text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
         I tested the product with users with keen expectation on how to navigate
         through the app easily & carry out the most important tasks to them
         based on fitness.. I gave 4 people the prototype to go test, divided
@@ -63,10 +63,10 @@ const UserTesting = () => {
               background:
                 "linear-gradient(100deg, rgba(102, 112, 133, 0.10) 2.31%, rgba(152, 162, 179, 0.10) 52.72%, rgba(71, 84, 103, 0.10) 86.04%)"
             }}
-            className="rounded-[40px] sm:rounded-[70px] md:rounded-[100px] h-auto min-h-[500px] sm:min-h-[600px] md:h-[740px] border border-solid border-[#667085] p-6 sm:p-[40px] md:p-[64px] relative overflow-hidden mb-8 md:mb-0"
+            className="rounded-[40px] sm:rounded-[70px] md:rounded-[100px] h-auto min-h-[500px] sm:min-h-[600px] md:h-[740px] border border-solid border-base p-6 sm:p-[40px] md:p-[64px] relative overflow-hidden mb-8 md:mb-0"
           >
             <div className="relative z-10">
-              <h1 className="text-[#C9CFD9] text-[22px] sm:text-[24px] md:text-[28px] font-tinyBrushy font-normal leading-[normal]">
+              <h1 className="text-body text-[22px] sm:text-[24px] md:text-[28px] font-tinyBrushy font-normal leading-[normal]">
                 {column.title1}
               </h1>
               <div className="pt-[16px] sm:pt-[20px] md:pt-[24px] flex flex-col gap-[16px] sm:gap-[20px] md:gap-[24px]">
@@ -78,7 +78,7 @@ const UserTesting = () => {
                     <div className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] md:w-[24px] md:h-[24px] mt-1 sm:mt-0 flex-shrink-0">
                       {arrow}
                     </div>
-                    <span className="text-[#ffff] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.4] md:leading-[normal] font-Beginning">
+                    <span className="text-title text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.4] md:leading-[normal] font-Beginning">
                       {item}
                     </span>
                   </div>
@@ -86,7 +86,7 @@ const UserTesting = () => {
               </div>
 
               {/* second1 */}
-              <h1 className="text-[#C9CFD9] pt-[40px] sm:pt-[56px] md:pt-[72px] text-[22px] sm:text-[24px] md:text-[28px] font-tinyBrushy font-normal leading-[normal]">
+              <h1 className="text-body pt-[40px] sm:pt-[56px] md:pt-[72px] text-[22px] sm:text-[24px] md:text-[28px] font-tinyBrushy font-normal leading-[normal]">
                 {column.title2}
               </h1>
               <div className="pt-[16px] sm:pt-[20px] md:pt-[24px] flex flex-col gap-[16px] sm:gap-[20px] md:gap-[24px]">
@@ -98,7 +98,7 @@ const UserTesting = () => {
                     <div className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] md:w-[24px] md:h-[24px] mt-1 sm:mt-0 flex-shrink-0">
                       {arrow}
                     </div>
-                    <span className="text-[#ffff] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.4] md:leading-[normal] font-Beginning">
+                    <span className="text-title text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.4] md:leading-[normal] font-Beginning">
                       {item}
                     </span>
                   </div>

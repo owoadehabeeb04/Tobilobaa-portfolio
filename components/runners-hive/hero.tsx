@@ -23,9 +23,9 @@ const RunnersHiveHero = () => {
             alt="product design"
           />
         </div>
-        <main className="flex flex-col md:flex-row md:gap-[130px] items-center grid-cols-2">
+        <main className="relative z-10 flex flex-col md:flex-row md:gap-[130px] items-center grid-cols-2">
           <div className="w-full md:max-w-[690px]">
-            <h1 className="text-[#fff] font-tinyBrushy text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[normal]">
+            <h1 className="text-title font-tinyBrushy text-[40px] sm:text-[50px] md:text-[64px] font-normal leading-[normal]">
               Earn More, Move More: <br className="hidden sm:block" />
               Turning Kilometers into Rewards
             </h1>
@@ -33,7 +33,7 @@ const RunnersHiveHero = () => {
               {details.map((det, index) => (
                 <div className="flex flex-row gap-[16px] md:gap-[32px]" key={index}>
                   <Image src={arrow} width={24} height={24} alt="arrow" />
-                  <p className="text-[#C9CFD9] text-[18px] sm:text-[20px] md:text-[24px] font-normal leading-[normal] font-Beginning">
+                  <p className="text-body text-[18px] sm:text-[20px] md:text-[24px] font-normal leading-[normal] font-Beginning">
                     {" "}
                     {det}
                   </p>
@@ -63,7 +63,16 @@ const RunnersHiveHero = () => {
         </div>{" "}
       </div>
 
-      <div className="bg-[#06090F] w-full max-w-[1512px] h-[120px] md:h-[150px] lg:h-[182px] translate-y-[-5rem] md:translate-y-[-5.5rem] lg:translate-y-[-6.5rem] z-100"></div>
+      {/*
+        Decorative colour band, pulled up to blend with the phone mockup above.
+        `z-100` isn't a real Tailwind class (no bracket syntax), so it did
+        nothing — this div has no stacking context of its own beyond the one
+        `translate-y` creates, and as the later sibling in the DOM it painted
+        over the hero text once the text column grew taller than this bar's
+        fixed offset accounted for. `main` above is now `relative z-10` so it
+        always stays on top regardless of exact content height.
+      */}
+      <div className="relative z-0 bg-base w-full max-w-[1512px] h-[120px] md:h-[150px] lg:h-[182px] translate-y-[-5rem] md:translate-y-[-5.5rem] lg:translate-y-[-6.5rem]"></div>
     </div>
   );
 };

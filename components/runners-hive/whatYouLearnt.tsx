@@ -27,11 +27,11 @@ const WhatYouLearnt = () => {
     
     return (
         <div className='pt-[60px] sm:pt-[90px] md:pt-[125px] px-[16px] sm:px-[24px] md:px-0'>
-            <h1 className='text-[#C9CFD9] font-tinyBrushy font-normal leading-[normal] text-[32px] sm:text-[40px] md:text-[48px]'>
+            <h1 className='text-body font-tinyBrushy font-normal leading-[normal] text-[32px] sm:text-[40px] md:text-[48px]'>
                 What did i learn?
             </h1>
             
-            <p className='pt-[16px] sm:pt-[20px] md:pt-[24px] text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] leading-[normal] font-normal font-Beginning'>
+            <p className='pt-[16px] sm:pt-[20px] md:pt-[24px] text-title text-[16px] sm:text-[18px] md:text-[20px] leading-[normal] font-normal font-Beginning'>
                 Designing this product was tasking & these are the things I learnt from designing this product:
             </p>
             
@@ -41,7 +41,7 @@ const WhatYouLearnt = () => {
                         <div className='flex-shrink-0 mt-1 sm:mt-0'>
                             {arrow}
                         </div>
-                        <p className='text-[#fff] text-[14px] sm:text-[16px] md:text-[18px] font-normal leading-[1.5] font-Beginning'>
+                        <p className='text-title text-[14px] sm:text-[16px] md:text-[18px] font-normal leading-[1.5] font-Beginning'>
                             {item}
                         </p>
                     </div>

@@ -9,7 +9,7 @@ const ProjectsCaseStudy = () => {
       {caseStudies.map((caseStudies, index) => (
         <div
           key={index}
-          className={`rounded-[40px] border w-full border-solid border-[#667085] grid grid-cols-1 md:grid-cols-2 gap-[25px] md:gap-[48px] md:place-items-center md:place-content-center p-[20px]`}
+          className={`rounded-[40px] border w-full border-solid border-base grid grid-cols-1 md:grid-cols-2 gap-[25px] md:gap-[48px] md:place-items-center md:place-content-center p-[20px]`}
         >
           <div
             className={`${
@@ -30,18 +30,18 @@ const ProjectsCaseStudy = () => {
             } flex flex-col  md:justify-start items-start md:px-[32px]  gap-[72px]`}
           >
             <div>
-              <h1 className="text-[#fff] font-tinyBrushy md:text-[28px] text-[24px] lg:text-[40px] font-normal leading-[normal]">
+              <h1 className="text-title font-tinyBrushy md:text-[28px] text-[24px] lg:text-[40px] font-normal leading-[normal]">
                 {caseStudies?.title}
               </h1>
 
-              {/* <p className="text-[#C9CFD9] md:text-base text-[14px] lg:text-[18px] font-normal leading-[normal] pt-[6px] md:pt-[12px] font-Beginning">
+              {/* <p className="text-body md:text-base text-[14px] lg:text-[18px] font-normal leading-[normal] pt-[6px] md:pt-[12px] font-Beginning">
                 {caseStudies?.description}
               </p> */}
               <div className="flex flex-row flex-wrap pt-[14px] md:pt-[24px] gap-4 items-center ">
                 {caseStudies?.skills?.map((skills, index) => (
                   <p
                     key={index}
-                    className="text-[#98A2B3] text-center font-tinyBrushy text-[12px] lg:text-[14px] font-normal leadin-[normal]"
+                    className="text-label text-center font-tinyBrushy text-[12px] lg:text-[14px] font-normal leadin-[normal]"
                   >
                     {skills}
                   </p>
@@ -55,8 +55,8 @@ const ProjectsCaseStudy = () => {
                     <div
                       className={`${
                         link?.type === "caseStudy"
-                          ? "text-[#FFA17A] rounded-[100px] backdrop-blur-[7.5px] bg-[#FFFFFF1A] p-2 md:p-4"
-                          : "text-[#FFF] bg-[#06090F] p-2 md:p-4 backdrop-blur-[7.5px] "
+                          ? "text-accent rounded-[100px] backdrop-blur-[7.5px] bg-btn p-2 md:p-4"
+                          : "text-title bg-surface p-2 md:p-4 backdrop-blur-[7.5px] "
                       }  text-[14px] md:text-[16px] flex flex-row gap-1 items-center   font-Beginning leading-[normal] font-normal text-center   `}
                     >
                       {link?.text}

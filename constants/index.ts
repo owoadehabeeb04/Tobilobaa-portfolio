@@ -18,16 +18,16 @@ import hatleyImage from "../public/assets/images/hatley.svg"
 import techiaImage from "../public/assets/images/techia.svg"
 export const navItems = [
   {
+    text: "Home",
+    path: "/"
+  },
+  {
     text: "Projects",
     path: "/projects"
   },
   {
     text: "About",
     path: "/about"
-  },
-  {
-    text: "Contact",
-    path: "#contact"
   }
 ];
 export const caseStudies = [

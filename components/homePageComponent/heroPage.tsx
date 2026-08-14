@@ -1,117 +1,84 @@
 import React from "react";
-import uiUx from "../../public/assets/images/Group 3.svg";
-import productDesign from "../../public/assets/images/Component 8.svg";
-import dot from "../../public/assets/images/dot.svg";
 import Image from "next/image";
+import { MapPin } from "lucide-react";
+import PillLink from "@/components/ui/pill-link";
+import portrait from "../../public/assets/images/hero-portrait.png";
+import figmaLogo from "../../public/assets/images/figma-logo.png";
+import framerLogo from "../../public/assets/images/framer-logo.png";
+import canvaLogo from "../../public/assets/images/canva-logo.png";
+
 const HeroPage = () => {
   return (
-    <>
-      {" "}
-      <div className="md:h-screen h-[60vh] relative">
-        {/* <Image className='' src={mainPicture} alt="main picture" width={391} height={379} /> */}
-
-        <div className=" bg-[url('/images/Main picture.png')] bg-[length:75%] md:bg-[length:50%] lg:bg-[length:26%] bg-no-repeat bg-bottom sm:bg-[position:50%_35%] background flex  md:absolute md:translate-x-[-50%] md:translate-y-[-50%] md:top-[50%] md:left-[50%] h-full  justify-center items-center w-full mx-auto">
-          <h1 className="text-[#fff] font-tinyBrushy font-normal md:mr-[4rem] mt-[15rem] md:mt-[8rem] leading-[normal] text-[48px] md:text-[90px]">
-            HELLO, I’M <br /> <span className="ml-[5rem]">TOBILOBA</span> <br />{" "}
-            <span className="ml-[10rem]">OWOADE</span>
-          </h1>
+    <section className="relative mx-auto max-w-[1512px] overflow-hidden px-5 pb-16 pt-[112px] md:px-8 lg:px-[112px]">
+      {/* Location + role badges, centred above the wordmark */}
+      <div className="flex flex-col items-center gap-2">
+        <div className="flex items-center justify-center gap-2">
+          <MapPin aria-hidden="true" className="size-3 text-label" />
+          <span className="text-fig-12 text-label">Toronto, Canada</span>
         </div>
-        <div>
-          {/* <div className='bg-[##98A2B3] rounded-[100%] w-[4px] h-[4px] p-4 absolute left-[13%] top-[50%]'></div> */}
-          <Image
-            className="absolute left-[2%] md:left-[17%]  top-[70%] md:top-[48%] "
-            src={dot}
-            width={4}
-            height={4}
-            alt=""
-          />
-          <Image
-            className="absolute max-[768px]:right-[10%] md:left-[34.5%] top-[25%] md:top-[39%] "
-            src={dot}
-            width={4}
-            height={4}
-            alt=""
-          />
-
-          <Image
-            className="absolute left-[13%] bottom-[-10%] md:bottom-[14%] "
-            src={dot}
-            width={4}
-            height={4}
-            alt=""
-          />
-
-          <Image
-            className="absolute max-[768px]:hidden right-[7%] bottom-[38%] "
-            src={dot}
-            width={4}
-            height={4}
-            alt=""
-          />
-          <Image
-            className="absolute right-[24.5%] max-[768px]:hidden top-[39%] "
-            src={dot}
-            width={4}
-            height={4}
-            alt=""
-          />
-
-          <Image
-            className="absolute right-[34%] max-[768px]:hidden bottom-[26%] "
-            src={dot}
-            width={4}
-            height={4}
-            alt=""
-          />
+        <div className="flex items-center justify-center gap-2 rounded-[10px] bg-accent px-2 py-[2px]">
+          <span className="text-fig-12 text-[#06090f]">Product Designer</span>
+          <span aria-hidden="true" className="size-1 shrink-0 rounded-full bg-[#06090f]" />
+          <span className="text-fig-12 text-[#06090f]">
+            A2 French Language Speaker
+          </span>
         </div>
+      </div>
+
+      {/* Left-aligned with the bio and CTA below. Sized off the viewport so the
+          wordmark stays on one line, capped at the scaled Figma size. */}
+      <h1 className="mt-6 whitespace-nowrap text-left font-display uppercase leading-none text-title [font-size:clamp(2rem,10.5vw,calc(200px*var(--font-scale)))] lg:mt-8">
+        Tobiloba Owoade
+      </h1>
+
+      {/*
+        Outer box is square and clips; the portrait is 143.31% of its height
+        and anchored top, so the frame crops the lower part of the photo.
+        On desktop it is absolutely placed so it overlaps the wordmark from the
+        right, as designed — it bleeds slightly past the right edge.
+      */}
+      <div className="relative mx-auto mt-8 aspect-square w-[240px] overflow-hidden sm:w-[300px] lg:absolute lg:right-0 lg:top-[150px] lg:mt-0 lg:w-[440px] xl:top-[178px] xl:w-[560px]">
         <Image
-          className="absolute left-[13%] top-[20%] max-[768px]:w-[15%] md:top-[50%] "
-          src={productDesign}
-          width={137}
-          height={123}
-          alt=""
+          src={portrait}
+          alt="Tobiloba Owoade"
+          priority
+          className="absolute left-0 top-0 h-[143.31%] w-full max-w-none object-cover object-top"
         />
-        <Image
-          className="absolute right-[13%] top-[110%] max-[768px]:w-[15%] md:top-[50%] "
-          src={uiUx}
-          width={137}
-          height={123}
-          alt=""
-      />
       </div>
-      <div className="description  md:mt-0 mt-32 flex items-center md:translate-y-[-4rem] pb-[0rem]">
-        <ul className="flex text-center  text-base md:text-2xl lg:text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center">
-          <li>A UI/UX Designer based in Toronto, Canada, </li>
-          <Image className=" " src={dot} width={8} height={8} alt="" />
 
-          <li>A UI/UX Designer based in Toronto, Canada</li>
-          <Image className=" " src={dot} width={8} height={8} alt="" />
+      <div className="relative mt-10 flex flex-col items-start gap-8 lg:mt-[64px] lg:max-w-[60%]">
+        <p className="text-fig-20 text-body lg:text-fig-24">
+          A product designer with 5+ years work experience that turns complex
+          problems into intuitive designs. Designing scalable products for
+          startups and growing companies while leveraging AI to work smarter, not
+          harder.
+        </p>
 
-          <li>A UI/UX Designer based in Toronto, Canada</li>
-          <Image className=" " src={dot} width={8} height={8} alt="" />
-        </ul>
-        <ul className="flex text-center  text-base md:text-2xl lg:text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center">
-          <li>A UI/UX Designer based in Toronto, Canada</li>
-          <Image className=" " src={dot} width={8} height={8} alt="" />
+        <PillLink href="#contact">Contact me</PillLink>
 
-          <li>A UI/UX Designer based in Toronto, Canada</li>
-          <Image className=" " src={dot} width={8} height={8} alt="" />
-
-          <li>A UI/UX Designer based in Toronto, Canada</li>
-          <Image className=" " src={dot} width={8} height={8} alt="" />
-        </ul>
-        <ul className="flex text-center  text-base md:text-2xl lg:text-[32px] leading-[normal] gap-1 text-[#999] font-normal  font-tinyBrushy  flex-row description-slide items-center">
-          <li>A UI/UX Designer based in Toronto, Canada</li>
-          <Image className=" " src={dot} width={8} height={8} alt="" />
-
-          <li>A UI/UX Designer based in Toronto, Canada</li>
-          <Image className=" " src={dot} width={8} height={8} alt="" />
-
-          <li>A UI/UX Designer based in Toronto, Canada</li>
-          <Image className=" " src={dot} width={8} height={8} alt="" />
+        <ul className="flex items-center gap-5">
+          {/* Each logo keeps its own designed crop — the Figma sprite holds a
+              coloured and an outlined mark, and this window selects the coloured one. */}
+          <li className="relative h-[64px] w-[49px] overflow-hidden">
+            <Image
+              src={figmaLogo}
+              alt="Figma"
+              className="absolute left-[-149.62%] top-[-89.74%] h-[281.52%] w-[663.36%] max-w-none"
+            />
+          </li>
+          <li className="relative size-[64px]">
+            <Image src={framerLogo} alt="Framer" className="absolute inset-0 size-full max-w-none object-cover" />
+          </li>
+          <li className="relative h-[64px] w-[63px] overflow-hidden">
+            <Image
+              src={canvaLogo}
+              alt="Canva"
+              className="absolute left-[-21.43%] top-[-20.66%] h-[140.6%] w-[142.86%] max-w-none"
+            />
+          </li>
         </ul>
       </div>
-    </>
+    </section>
   );
 };
 

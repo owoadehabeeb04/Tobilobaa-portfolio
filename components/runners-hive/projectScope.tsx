@@ -36,11 +36,11 @@ const ProjectScope = () => {
 
   return (
     <div className=" pt-[55px]">
-      <h1 className="text-[#C9CFD9] font-tinyBrushy text-[32px] sm:text-[40px] md:text-[48px] font-normal leading-[normal]">
+      <h1 className="text-body font-tinyBrushy text-[32px] sm:text-[40px] md:text-[48px] font-normal leading-[normal]">
         {" "}
         Project Scope
       </h1>
-      <p className="pt-[16px] sm:pt-[24px] md:pt-[32px] font-Beginning text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+      <p className="pt-[16px] sm:pt-[24px] md:pt-[32px] font-Beginning text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
         The Runners Hive project was developed to motivate and engage fitness
         enthusiasts by turning their running activities into a rewarding
         experience. Many people struggle with staying consistent in their
@@ -55,10 +55,10 @@ const ProjectScope = () => {
                 background:
                   "linear-gradient(100deg, rgba(102, 112, 133, 0.10) 2.31%, rgba(152, 162, 179, 0.10) 52.72%, rgba(71, 84, 103, 0.10) 86.04%)"
               }}
-            className="rounded-[40px] sm:rounded-[70px] md:rounded-[100px]  h-[529px] md:h-[740px] border border-solid border-[#667085] p-6 sm:p-[40px] md:p-[64px] relative overflow-hidden mb-8 md:mb-0"
+            className="rounded-[40px] sm:rounded-[70px] md:rounded-[100px]  h-[529px] md:h-[740px] border border-solid border-base p-6 sm:p-[40px] md:p-[64px] relative overflow-hidden mb-8 md:mb-0"
           >
             <div className="relative flex flex-col z-10">
-              <h1 className="text-[#C9CFD9] flex-grow text-[22px] sm:text-[24px] md:text-[28px] font-tinyBrushy font-normal leading-[normal]">
+              <h1 className="text-body flex-grow text-[22px] sm:text-[24px] md:text-[28px] font-tinyBrushy font-normal leading-[normal]">
                 {column.title}
               </h1>
               <div className="pt-[20px] sm:pt-[30px] md:pt-[40px] flex flex-col gap-[16px] sm:gap-[20px] md:gap-[24px]">
@@ -67,7 +67,7 @@ const ProjectScope = () => {
                     <div className="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] md:w-[24px] md:h-[24px] flex-shrink-0">
                       {arrow}
                     </div>
-                    <span className="text-[#ffff] text-[14px] sm:text-[15px] md:text-[16px] font-normnal leading-[1.4] md:leading-[normal] font-Beginning">
+                    <span className="text-title text-[14px] sm:text-[15px] md:text-[16px] font-normnal leading-[1.4] md:leading-[normal] font-Beginning">
                       {item}
                     </span>
                   </div>

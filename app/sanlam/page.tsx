@@ -27,7 +27,7 @@ const SanlamCaseStudy = () => {
     <div className="pt-[6rem] sm:pt-[8rem] md:pt-[10rem]">
       {/* hero page of the sanlam case study  */}
       <div className="flex px-[16px] sm:px-[24px] md:px-[48px] max-w-[1311px] flex-col gap-[30px] sm:gap-[40px] md:gap-[57px] justify-center items-center mx-auto">
-        <h1 className="text-[#fff] max-w-[978px] text-center font-tinyBrushy text-[28px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-normal leading-[normal]">
+        <h1 className="text-title max-w-[978px] text-center font-tinyBrushy text-[28px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-normal leading-[normal]">
           Changing the experience of over 500,000 customers on how to manage
           their insurance products & make payments.
         </h1>
@@ -59,46 +59,46 @@ const SanlamCaseStudy = () => {
       <div className="px-[16px] max-w-[1311px] mx-auto sm:px-[40px] md:px-[80px] lg:px-[163px] pt-[4rem] sm:pt-[6rem] md:pt-[8rem]">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-[20px] sm:gap-[30px]">
           <div className="flex flex-col gap-[15px] sm:gap-[28px]">
-            <h1 className="text-[#C9CFD9] font-normal leading-[normal] font-tinyBrushy text-[14px] sm:text-base">
+            <h1 className="text-body font-normal leading-[normal] font-tinyBrushy text-[14px] sm:text-base">
               Duration
             </h1>
-            <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+            <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
               3 months
             </p>
           </div>
 
           <div className="flex flex-col gap-[15px] sm:gap-[28px]">
-            <h1 className="text-[#C9CFD9] font-normal leading-[normal] font-tinyBrushy text-[14px] sm:text-base">
+            <h1 className="text-body font-normal leading-[normal] font-tinyBrushy text-[14px] sm:text-base">
               TEAM MEMBERS
             </h1>
-            <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+            <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
               Owoade Tobiloba
             </p>
           </div>
 
           <div className="flex flex-col gap-[15px] sm:gap-[28px]">
-            <h1 className="text-[#C9CFD9] font-normal leading-[normal] font-tinyBrushy text-[14px] sm:text-base">
+            <h1 className="text-body font-normal leading-[normal] font-tinyBrushy text-[14px] sm:text-base">
               ROLE
             </h1>
             <div className="flex flex-col gap-2">
-              <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 UI Designer
               </p>
-              <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 UX Designer
               </p>
             </div>
           </div>
 
           <div className="flex flex-col gap-[15px] sm:gap-[28px]">
-            <h1 className="text-[#C9CFD9] font-normal leading-[normal] font-tinyBrushy text-[14px] sm:text-base">
+            <h1 className="text-body font-normal leading-[normal] font-tinyBrushy text-[14px] sm:text-base">
               TOOLS
             </h1>
             <div className="flex flex-col gap-2">
-              <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Figma
               </p>
-              <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Canva
               </p>
             </div>
@@ -108,21 +108,21 @@ const SanlamCaseStudy = () => {
         <div className="py-[40px] sm:py-[50px] md:py-[64px] flex flex-col gap-[40px] sm:gap-[50px] md:gap-[64px]">
           {/* the challenge */}
           <div>
-            <h1 className="text-[#C9CFD9] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+            <h1 className="text-body font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
               THE CHALLENGE
             </h1>
             <ul className="list-disc pl-4 flex gap-[15px] sm:gap-[20px] pt-[12px] flex-col">
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Customers couldn&apos;t easily find their past and present policies.
               </li>
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Renewing policy premiums was a lengthy and confusing process.
               </li>
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Reaching customer support required multiple steps, causing
                 frustration.
               </li>
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Older users struggled with small text and complex navigation.
               </li>
             </ul>
@@ -130,10 +130,10 @@ const SanlamCaseStudy = () => {
 
           {/* research and insights  */}
           <div>
-            <h1 className="text-[#C9CFD9] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+            <h1 className="text-body font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
               RESEARCH & INSIGHTS
             </h1>
-            <p className="text-[#fff] pt-[12px] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+            <p className="text-title pt-[12px] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
               To understand the user pain points, I conducted a thorough review
               of the existing app and analyzed customer feedback. Since the
               primary users were Sanlam customers, I leveraged insights from
@@ -142,18 +142,18 @@ const SanlamCaseStudy = () => {
               improvements:
             </p>
             <ul className="list-disc pl-4 flex gap-[15px] sm:gap-[20px] pt-[20px] flex-col">
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Simplify navigation to ensure policies are visible on the
                 homepage.
               </li>
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Streamline the renewal process to be completed in just three
                 clicks within five minutes.
               </li>
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Introduce a direct messaging feature for customer support.
               </li>
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Optimize the interface for older users with larger text and
                 guided steps.
               </li>
@@ -163,19 +163,19 @@ const SanlamCaseStudy = () => {
 
         <div className="py-[40px] sm:py-[50px] md:py-[64px]">
           <div>
-            <h1 className="text-[#C9CFD9] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+            <h1 className="text-body font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
               DESIGN PROCESS
             </h1>
             <ul className="list-disc pl-4 flex gap-[15px] sm:gap-[20px] pt-[12px] flex-col">
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Wireframing & Ideation – Created low-fidelity wireframes to map
                 out user flows and optimize key interactions.
               </li>
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Iterative Prototyping – Designed high-fidelity mockups based on
                 feedback from internal staff acting as test users.
               </li>
-              <li className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+              <li className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                 Usability Testing – Conducted usability tests with staff members
                 who were also Sanlam customers. Their feedback guided further
                 refinements.
@@ -185,10 +185,10 @@ const SanlamCaseStudy = () => {
         </div>
 
         <div className="py-[40px] sm:py-[50px] md:py-[64px]">
-          <h1 className="text-[#C9CFD9] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+          <h1 className="text-body font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
             SKETCHES
           </h1>
-          <p className="text-[#fff] pt-[12px] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+          <p className="text-title pt-[12px] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
             Designing this app was something I hadn&apos;t done before so it came
             with a lot of confusion and sketching my ideas helped a lot. The
             onboarding screens gave me a lot of issues because I was confused on
@@ -237,10 +237,10 @@ const SanlamCaseStudy = () => {
         </div>
 
         <div className="py-[30px] sm:py-[38px] md:py-[46px]">
-          <h1 className="text-[#C9CFD9] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+          <h1 className="text-body font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
             INFORMATION ARCHITECTURE
           </h1>
-          <p className="text-[#fff] pt-[12px] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+          <p className="text-title pt-[12px] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
             Ensuring the application is well-organized stands out as a crucial
             factor, significantly streamlining the design and development
             processes. Such organization becomes paramount given the continual
@@ -262,10 +262,10 @@ const SanlamCaseStudy = () => {
 
         {/* User Flow Section */}
         <div className="py-[30px] sm:py-[38px] md:py-[46px]">
-          <h1 className="text-[#C9CFD9] font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+          <h1 className="text-body font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
             USER FLOW
           </h1>
-          <p className="text-[#fff] pt-[12px] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+          <p className="text-title pt-[12px] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
             Different flows for different actions that can be done on the app
             will be shown so as not to overload and complicate things. The
             actions and flows that will be accounted for are:
@@ -275,25 +275,25 @@ const SanlamCaseStudy = () => {
           <div className="flex flex-col sm:flex-row flex-wrap pt-8 items-start sm:items-center gap-5">
             <div className="flex items-center gap-2">
               <Image src={arrow} alt="arrow" className="w-5 h-auto" />
-              <h1 className="text-[#fff] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+              <h1 className="text-title font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
                 Onboarding / Login / Sign up flow
               </h1>
             </div>
             <div className="flex items-center gap-2">
               <Image src={arrow} alt="arrow" className="w-5 h-auto" />
-              <h1 className="text-[#fff] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+              <h1 className="text-title font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
                 Make a Claim flow
               </h1>
             </div>
             <div className="flex items-center gap-2">
               <Image src={arrow} alt="arrow" className="w-5 h-auto" />
-              <h1 className="text-[#fff] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+              <h1 className="text-title font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
                 Make Payment flow
               </h1>
             </div>
             <div className="flex items-center gap-2">
               <Image src={arrow} alt="arrow" className="w-5 h-auto" />
-              <h1 className="text-[#fff] font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
+              <h1 className="text-title font-Beginning text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal]">
                 Get Help flow
               </h1>
             </div>
@@ -302,10 +302,10 @@ const SanlamCaseStudy = () => {
 
         {/* onboarding flow */}
         <div className="py-[30px] sm:py-[40px] md:py-[48px]">
-          <h1 className="text-[#C9CFD9] text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             Onboarding / Login / Sign up flow
           </h1>
-          <p className="text-[#fff] pt-[12px] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+          <p className="text-title pt-[12px] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
             Easy onboarding and login is very necessary to not drive the
             customers away. So, use of Phone number became the choice.
           </p>
@@ -323,10 +323,10 @@ const SanlamCaseStudy = () => {
 
         {/* claim flow */}
         <div className="pt-[30px] sm:pt-[40px] md:pt-[48px]">
-          <h1 className="text-[#C9CFD9] text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             Make a Claim Flow
           </h1>
-          <p className="text-[#fff] pt-[12px] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+          <p className="text-title pt-[12px] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
             A solution was made to make customers make claims successfully on
             the app without having to call customer care or go the office
             physically.
@@ -345,7 +345,7 @@ const SanlamCaseStudy = () => {
 
         {/* make a claim design flow */}
         <div className="pt-[30px] sm:pt-[40px] md:pt-[48px]">
-          <h1 className="text-[#C9CFD9] text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             Make a Claim Design
           </h1>
 
@@ -362,11 +362,11 @@ const SanlamCaseStudy = () => {
 
         {/* make a payment flow */}
         <div className="pt-[30px] sm:pt-[40px] md:pt-[48px]">
-          <h1 className="text-[#C9CFD9] text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             Make a Payment Flow
           </h1>
 
-          <p className="text-[#fff] pt-[12px] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+          <p className="text-title pt-[12px] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
             To pay premium on policies used to be very traditional, they either
             used to go to the bank or call the agent to do it, but now,
             customers can go on the app and click any policy they want to make a
@@ -386,7 +386,7 @@ const SanlamCaseStudy = () => {
 
         {/* make a payment */}
         <div className="pt-[30px] sm:pt-[40px] md:pt-[48px]">
-          <h1 className="text-[#C9CFD9] text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             Make a Payment
           </h1>
 
@@ -403,11 +403,11 @@ const SanlamCaseStudy = () => {
 
         {/* GET a HELP */}
         <div className="pt-[30px] sm:pt-[40px] md:pt-[48px]">
-          <h1 className="text-[#C9CFD9] text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             Get Help Flow
           </h1>
 
-          <p className="text-[#fff] pt-[12px] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+          <p className="text-title pt-[12px] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
             Getting to customer care is very essential for a company that has
             over 500,000 customer base. So, instead of having to go to social
             media or going physically to the office, there is a solution that
@@ -427,7 +427,7 @@ const SanlamCaseStudy = () => {
 
         {/* Get a help */}
         <div className="pt-[30px] sm:pt-[40px] md:pt-[48px]">
-          <h1 className="text-[#C9CFD9] text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             Get Help Flow
           </h1>
 
@@ -446,11 +446,11 @@ const SanlamCaseStudy = () => {
         <div className="pt-[30px] sm:pt-[40px] md:pt-[48px]">
           <div className="relative isolate">
             <div className="relative z-10">
-              <h1 className="text-[#C9CFD9] text-center font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+              <h1 className="text-body text-center font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
                 HomePage/Dashboard.
               </h1>
 
-              <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal text-center font-Beginning leading-[normal] mt-2">
+              <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal text-center font-Beginning leading-[normal] mt-2">
                 The homepage screen for customers that have or have had AT LEAST
                 1 POLICY with us
               </p>
@@ -469,11 +469,11 @@ const SanlamCaseStudy = () => {
 
           <div className="relative translate-y-[-1rem] sm:translate-y-[-1.5rem] md:translate-y-[-2rem] isolate">
             <div className="relative z-10">
-              <h1 className="text-[#C9CFD9] text-center font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+              <h1 className="text-body text-center font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
                 HomePage/Dashboard.
               </h1>
 
-              <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal text-center font-Beginning leading-[normal] mt-2">
+              <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal text-center font-Beginning leading-[normal] mt-2">
                 The homepage screen for customers that have NO POLICY with us
               </p>
             </div>
@@ -491,11 +491,11 @@ const SanlamCaseStudy = () => {
 
           <div className="relative translate-y-[-1rem] sm:translate-y-[-1.5rem] md:translate-y-[-2rem] isolate">
             <div className="relative z-10">
-              <h1 className="text-[#C9CFD9] text-center font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+              <h1 className="text-body text-center font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
                 Policy Details Screens.
               </h1>
 
-              <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal text-center font-Beginning leading-[normal] mt-2">
+              <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal text-center font-Beginning leading-[normal] mt-2">
                 The Policy details screen are displayed to show information on
                 the policy in 2 parts:
               </p>
@@ -514,7 +514,7 @@ const SanlamCaseStudy = () => {
 
           <div className="relative translate-y-[-1rem] sm:translate-y-[-1.5rem] md:translate-y-[-2rem] isolate">
             <div className="relative z-10">
-              <h1 className="text-[#C9CFD9] text-center font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
+              <h1 className="text-body text-center font-tinyBrushy text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal]">
                 Other Screens.
               </h1>
             </div>
@@ -533,10 +533,10 @@ const SanlamCaseStudy = () => {
 
         {/* Design System */}
         <div className="pt-[30px] sm:pt-[35px] md:pt-[39px]">
-          <h1 className="text-[#C9CFD9] text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             Design System
           </h1>
-          <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning pt-[12px]">
+          <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning pt-[12px]">
             Design system serves as a single source of truth which groups all
             the elements that will allow the teams to design, realize, and
             develop a product. For this product I will show the color palettes,
@@ -547,14 +547,14 @@ const SanlamCaseStudy = () => {
 
         {/* Color Palette */}
         <div className="pt-[40px] sm:pt-[60px] md:pt-[83px]">
-          <h1 className="text-[#C9CFD9] text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[24px] sm:text-[28px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             Color Palatte
           </h1>
           <div className="flex pt-[25px] sm:pt-[35px] md:pt-[49px] flex-col gap-[30px] sm:gap-[35px] md:gap-[40px]">
             {/* Neutral Colors */}
             <div>
               <div>
-                <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+                <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                   Neutral Colors
                 </p>
               </div>
@@ -602,7 +602,7 @@ const SanlamCaseStudy = () => {
             {/* Primary Colors */}
             <div>
               <div>
-                <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+                <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                   Primary Colors
                 </p>
               </div>
@@ -648,7 +648,7 @@ const SanlamCaseStudy = () => {
             {/* Other Colors */}
             <div>
               <div>
-                <p className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+                <p className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
                   Other Colors
                 </p>
               </div>
@@ -693,7 +693,7 @@ const SanlamCaseStudy = () => {
         {/* Icons */}
         <div className="pt-[40px] sm:pt-[60px] md:pt-[75px]">
           <div>
-            <h1 className="text-[#fff] text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
+            <h1 className="text-title text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-[normal] font-Beginning">
               Icons
             </h1>
             <div className="gap-6 pt-[20px] sm:pt-[25px] md:pt-[32px]">
@@ -705,26 +705,26 @@ const SanlamCaseStudy = () => {
         </div>
 
         <div className="pt-[80px] sm:pt-[120px] md:pt-[161px]">
-          <h1 className="text-[#C9CFD9] text-[20px] sm:text-[24px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[20px] sm:text-[24px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             KEY SOLUTIONS & IMPACT
           </h1>
           <ul className="list-disc pl-4 flex gap-[12px] sm:gap-[15px] md:gap-[20px] pt-[10px] sm:pt-[12px] flex-col">
-            <li className="text-[#fff] text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
+            <li className="text-title text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
               Policy Management Simplification: Customers can now see their
               active and past policies directly from the homepage, improving
               accessibility and reducing confusion.
             </li>
-            <li className="text-[#fff] text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
+            <li className="text-title text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
               Seamless Premium Renewal: The process was redesigned to be
               completed in three simple steps, reducing the time required to
               renew policies from over 10 minutes to just five minutes.
             </li>
-            <li className="text-[#fff] text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
+            <li className="text-title text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
               Customer Support Integration: A direct messaging feature was
               added, allowing users to contact support without navigating
               through multiple screens.
             </li>
-            <li className="text-[#fff] text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
+            <li className="text-title text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
               Enhanced Accessibility for Older Users: The UI was optimized with
               larger text and guided steps, ensuring a more inclusive experience
             </li>
@@ -732,19 +732,19 @@ const SanlamCaseStudy = () => {
         </div>
 
         <div className="pt-[40px] sm:pt-[50px] md:pt-[64px]">
-          <h1 className="text-[#C9CFD9] text-[20px] sm:text-[24px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
+          <h1 className="text-body text-[20px] sm:text-[24px] md:text-[32px] font-normal leading-[normal] font-tinyBrushy">
             RESULTS & LEARNINGS
           </h1>
           <ul className="list-disc pl-4 flex gap-[12px] sm:gap-[15px] md:gap-[20px] pt-[10px] sm:pt-[12px] flex-col">
-            <li className="text-[#fff] text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
+            <li className="text-title text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
               Observational research and internal feedback can be valuable even
               in the absence of formal user studies.
             </li>
-            <li className="text-[#fff] text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
+            <li className="text-title text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
               Streamlining essential processes like policy renewal can greatly
               enhance user experience.
             </li>
-            <li className="text-[#fff] text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
+            <li className="text-title text-[14px] sm:text-[16px] md:text-[20px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed font-Beginning">
               Designing for accessibility benefits all users, not just a
               specific demographic.
             </li>
@@ -753,7 +753,7 @@ const SanlamCaseStudy = () => {
 
         <div className="pt-[80px] sm:pt-[100px] md:pt-[143px] pb-[40px] sm:pb-[60px] md:pb-[80px]">
           <a href="/runners-hive" className="block hover:opacity-80 transition-opacity">
-            <p className="underline font-Beginning text-[#fff] text-[18px] sm:text-[24px] md:text-[32px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed  text-left">
+            <p className="underline font-Beginning text-title text-[18px] sm:text-[24px] md:text-[32px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed  text-left">
               View Next Project - Earn More, Move More: Turning Kilometers into Rewards
             </p>
           </a>

@@ -1,56 +1,116 @@
-
-@import url("../public/fonts/TinyBrushy/stylesheet.css");
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-  --background: #06090f;
-  --foreground: #171717;
-  --font-indie-flower: 'Indie Flower', cursive;
 
-}
-.font-Montserrat {
-  font-family: "Montserrat";
-}
-.font-IndieFlower {
-  font-family: 'Indie Flower';
+/*
+ * Semantic theme tokens.
+ *
+ * Light is the base; the dark block below overrides. Every colour in the app
+ * should reference one of these rather than a literal hex, so the two modes
+ * stay in sync. The only exceptions are case-study colour swatches, where the
+ * hex is content being displayed rather than theme.
+ */
+:root {
+  color-scheme: light dark;
+
+  /*
+   * Global type scale factor.
+   *
+   * The `text-fig-*` utilities are named after their exact Figma pixel size and
+   * resolve to `calc(<figma px> * var(--font-scale))`. The design is drawn at a
+   * 1512px artboard, which renders larger than intended on a real screen, so
+   * everything is dialled back uniformly here. Change this one number to
+   * retune the whole site — 1 is pixel-exact to Figma.
+   */
+  --font-scale: 0.88;
+
+  --bg-base: #ffffff;
+  --bg-subtle: #f7f7f8;
+  --bg-surface: #f2f1f3;
+  --bg-surface-2: #edeef0;
+
+  --text-title: #09060d;
+  --text-body: #44576f;
+  --text-label: #86909d;
+
+  --border: #e0dee3;
+  --accent: #ffa17a;
+
+  /* The solid CTA pill is deliberately dark in BOTH modes (per Figma), so it
+     has no dark-mode override below. */
+  --btn-bg: #1f2227;
+
+  --nav-glass: rgba(255, 255, 255, 0.72);
+  --nav-border: #edeef0;
+  --nav-fg: #86909d;
+  --nav-active-fg: #44576f;
+  --nav-active-bg: #f7f7f8;
+
+  /* Ask-AI user message bubble */
+  --chat-bubble-bg: #f7f7f8;
+  --chat-bubble-fg: #09060d;
+  --chat-bubble-border: #e0e0e0;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #06090f;
+    --bg-base: #06090f;
+    --bg-subtle: #0d1117;
+    --bg-surface: #17191c;
+    --bg-surface-2: #202328;
+
+    --text-title: #ffffff;
+    --text-body: #c9cfd9;
+    --text-label: #98a2b3;
+
+    --border: #667085;
+    --accent: #ffa17a;
+
+    --nav-glass: rgba(41, 34, 34, 0.25);
+    --nav-border: rgba(255, 255, 255, 0.6);
+    --nav-fg: #ffffff;
+    --nav-active-fg: #ffa17a;
+    --nav-active-bg: #202328;
+
+    --chat-bubble-bg: #ffffff;
+    --chat-bubble-fg: #333333;
+    --chat-bubble-border: #e0e0e0;
   }
 }
-* {
-  transition: all 0.3s;
-}
+
 body {
-  background: var(--background);
+  background: var(--bg-base);
+  color: var(--text-body);
 }
 html {
   scroll-behavior: smooth;
 }
-@font-face {
-  font-family: "TinyBrushy";
-  src: url("/fonts/TinyBrushy/TinyBrushy.woff2") format("woff2");
+
+/* Scoped to interactive elements — a global `* { transition: all }` smears
+   every layout change, including the colour-mode switch. */
+a,
+button,
+input,
+[role="button"] {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease,
+    opacity 0.2s ease;
 }
 
-@font-face {
-  font-family: "IndieFlower";
-  src: url("/fonts/IndieFlower/IndieFlower-Regular.ttf") format("ttf");
+.font-Montserrat {
+  font-family: "Montserrat";
 }
+.font-IndieFlower {
+  font-family: var(--font-indie-flower), cursive;
+}
+
 .background {
   background-image: url(../public/assets/images/Main\ picture.png);
-  /* background-size: 26%; */
 }
 .backdrop-filter {
-  background: rgba(41, 34, 34, 0.25);
-
+  background: var(--nav-glass);
   backdrop-filter: blur(10px);
 }
-
 
 .music-playlist-scroll {
   animation: scrolled 30s linear infinite;
@@ -70,17 +130,12 @@ html {
 }
 .description {
   overflow: hidden;
-  /* background: white; */
   white-space: nowrap;
   position: relative;
   user-select: none;
   --gap: 20px;
   gap: var(--gap);
 }
-
-/* .logos:hover .logos-slide {
-  animation-play-state: paused;
-} */
 
 .description-slide {
   gap: var(--gap);
@@ -93,93 +148,30 @@ html {
   }
 }
 
-@layer base {
-  /* styles/globals.css */
-@font-face {
-  font-family: 'TinyBrushy';
-  src: url('/fonts/TinyBrushy/TinyBrushy.woff2') format('woff2'),
-       url('/fonts/TinyBrushy/TinyBrushy.woff') format('woff'),
-       url('/fonts/TinyBrushy/TinyBrushy.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-  @font-face {
-    font-family: "Beginning";
-    src: url("/fonts/Beginning/BeginningRegular.woff") format("truetype");
-    font-weight: 900;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Beginning";
-    src: url("/fonts/Beginning/BeginningRegular.woff") format("truetype");
-    font-weight: 700;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Beginning";
-    src: url("/fonts/Beginning/BeginningRegular.woff") format("truetype");
-    font-weight: 600;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Beginning";
-    src: url("/fonts/Beginning/BeginningRegular.woff") format("truetype");
-    font-weight: 500;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Beginning";
-    src: url("/fonts/Beginning/BeginningRegular.woff") format("truetype");
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "Beginning";
-    src: url("/fonts/Beginning/BeginningRegular.woff") format("truetype");
-    font-weight: 300;
-    font-display: swap;
-    font-style: normal;
-  }
-}
-
-/* .font-tinyBrushy {
-  font-family: "TinyBrushy";
-} */
 .font-beginning {
-  font-family: "Beginning";
+  font-family: var(--font-sans), sans-serif;
 }
 
 .clip-circle {
   clip-path: circle(50%);
 }
 .indie-flower-regular {
-  font-family: "IndieFlower", serif;
+  font-family: var(--font-indie-flower), cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-.font-tinyBrushy {
-  font-family: "Tiny Brushy", sans-serif;
-}
 .whoRunner {
-  background: "linear-gradient(100deg, rgba(102, 112, 133, 0.10) 2.31%, rgba(152, 162, 179, 0.10) 52.72%, rgba(71, 84, 103, 0.10) 86.04%)"
-
+  background: linear-gradient(
+    100deg,
+    rgba(102, 112, 133, 0.1) 2.31%,
+    rgba(152, 162, 179, 0.1) 52.72%,
+    rgba(71, 84, 103, 0.1) 86.04%
+  );
 }
 
 @media (max-width: 640px) {
   .whoRunner {
     background: none;
-  
-  } 
+  }
 }
