@@ -3,7 +3,7 @@ import Image from "next/image";
 import footerIcon from "../../public/assets/images/footerIcon.svg";
 import linkedln from "../../public/assets/images/linkedln.svg";
 
-const EMAIL = "qudusowoade@gmail.com";
+const EMAIL = "tobiowoade22@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/tobiloba-owoade/";
 
 const Footer = () => {

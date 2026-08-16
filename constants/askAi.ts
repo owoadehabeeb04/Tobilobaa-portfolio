@@ -103,8 +103,8 @@ export const askAiAnswers: Answer[] = [
         items: [
           {
             label: "Email",
-            value: "qudusowoade@gmail.com",
-            href: "mailto:qudusowoade@gmail.com"
+            value: "tobiowoade22@gmail.com",
+            href: "mailto:tobiowoade22@gmail.com"
           },
           { label: "Phone", value: "+1 705 905 0029", href: "tel:+17059050029" },
           {
