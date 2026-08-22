@@ -5,9 +5,14 @@ import { Send } from "lucide-react";
 type ChatInputProps = {
   onSubmit: (value: string) => void;
   placeholder?: string;
+  disabled?: boolean;
 };
 
-const ChatInput = ({ onSubmit, placeholder = "Ask me anything" }: ChatInputProps) => {
+const ChatInput = ({
+  onSubmit,
+  placeholder = "Ask me anything",
+  disabled = false
+}: ChatInputProps) => {
   const [value, setValue] = useState("");
 
   const submit = (event: React.FormEvent) => {
@@ -33,12 +38,13 @@ const ChatInput = ({ onSubmit, placeholder = "Ask me anything" }: ChatInputProps
         onChange={(event) => setValue(event.target.value)}
         placeholder={placeholder}
         autoComplete="off"
+        disabled={disabled}
         className="w-full bg-transparent text-fig-16 text-title outline-none placeholder:text-label"
       />
       <button
         type="submit"
         aria-label="Send message"
-        disabled={!value.trim()}
+        disabled={disabled || !value.trim()}
         className="shrink-0 text-title disabled:opacity-40"
       >
         <Send aria-hidden="true" className="size-6" />

@@ -1,6 +1,6 @@
 import React from "react";
 import uiUx from "../../public/assets/images/Group 3.svg";
-import heroImage from "../../public/assets/images/Home.svg";
+import heroImage from "../../public/assets/images/Home.webp";
 import productDesign from "../../public/assets/images/Component 8.svg";
 import arrow from "../../public/assets/images/detailArrow.svg";
 import Image from "next/image";

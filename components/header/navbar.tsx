@@ -9,12 +9,14 @@ const Navbar = () => {
 
   // "/" would prefix-match every route, so it has to be an exact comparison.
   const isActive = (path: string) =>
-    path === "/" ? pathname === "/" : pathname.startsWith(path);
+    path === "/"
+      ? pathname === "/" || pathname === "/ask-ai"
+      : pathname.startsWith(path);
 
   return (
     <header className="fixed inset-x-0 top-0 z-[100]">
       <nav className="mx-auto flex max-w-screen-xl flex-row items-center justify-between px-5 py-5 md:px-[2rem]">
-        <Link href="/" aria-label="Home" className="flex font-display text-fig-40 leading-none md:text-fig-48">
+        <Link href="/home" aria-label="Home" className="flex font-display text-fig-40 leading-none md:text-fig-48">
           <span className="text-title">T</span>
           <span className="-ml-[9px] text-accent">0</span>
         </Link>

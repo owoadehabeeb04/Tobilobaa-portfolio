@@ -27,9 +27,9 @@ const RunnersHive = () => {
         <WhatYouLearnt />
       </div>
       <div className="pt-[80px] max-w-[1311px] px-[16px] sm:px-[24px] md:px-[48px] mx-auto sm:pt-[100px] md:pt-[143px] pb-[40px] sm:pb-[60px] md:pb-[80px]">
-  <a href="#" className="block hover:opacity-80 transition-opacity">
+  <a href="/adepa" className="block hover:opacity-80 transition-opacity">
     <p className="underline font-Beginning text-title text-[18px] sm:text-[24px] md:text-[32px] font-normal leading-[normal] sm:leading-relaxed md:leading-relaxed text-left">
-      View Next Project - REDESIGN OF A RESTAURANT&apos;S MOBILE APP (MR SUB)
+      View Next Project - Mapping and Reimagining the End-to-End Service Journey of Adepa African Store
     </p>
   </a>
 </div>

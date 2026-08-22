@@ -8,18 +8,19 @@ import sanlamwebsite from "../public/assets/images/Frame 1001.png";
 import topSongs from "../public/assets/images/Screenshot 2025-01-03 at 7.02.52 PM.png";
 // Removed missing image file
 import playlistCurated from "../public/assets/images/B0F32B09-7E2D-4BFB-A6DE-B0CCE5BF5BBE.png"
-import article1 from "../public/assets/images/image 9.svg";
-import article2 from "../public/assets/images/image 10.svg";
-import article3 from "../public/assets/images/image 11.svg";
-import article4 from "../public/assets/images/image 12.svg";
-import article5 from "../public/assets/images/image 13.svg";
-import article6 from "../public/assets/images/image 14.svg";
-import hatleyImage from "../public/assets/images/hatley.svg"
-import techiaImage from "../public/assets/images/techia.svg"
+import article1 from "../public/assets/images/image 9.webp";
+import article2 from "../public/assets/images/image 10.webp";
+import article3 from "../public/assets/images/image 11.webp";
+import article4 from "../public/assets/images/image 12.webp";
+import article5 from "../public/assets/images/image 13.webp";
+import article6 from "../public/assets/images/image 14.webp";
+import hatleyImage from "../public/assets/images/hatley.webp"
+import techiaImage from "../public/assets/images/techia.webp"
+import adepa from "../public/assets/images/adepa/adepa-card-thumbnail.webp";
 export const navItems = [
   {
     text: "Home",
-    path: "/"
+    path: "/home"
   },
   {
     text: "Projects",
@@ -28,6 +29,10 @@ export const navItems = [
   {
     text: "About",
     path: "/about"
+  },
+  {
+    text: "Ask AI",
+    path: "/"
   }
 ];
 export const caseStudies = [
@@ -82,6 +87,24 @@ export const caseStudies = [
     ]
   },
   {
+    image: adepa,
+
+    type: "SERVICE DESIGN",
+    title:
+      "Mapping and reimagining the end-to-end service journey of Adepa African Store.",
+    description:
+      "A service design case study improving the in-store experience and digital presence of a community-driven African grocery store in Toronto.",
+
+    skills: ["User Research", "Service Design", "UX Design", "3D Modelling"],
+    links: [
+      {
+        text: "View Project",
+        type: "caseStudy",
+        theLink: "/adepa"
+      }
+    ]
+  },
+  {
     image: meetra,
 
     type: "MOBILE & WEB",
@@ -125,9 +148,9 @@ export const caseStudies = [
     ],
     links: [
       {
-        text: "Coming soon...",
+        text: "View Project",
         type: "caseStudy",
-        theLink: "/"
+        theLink: "/asset-management"
       },
       // {
       //   text: "View Website",

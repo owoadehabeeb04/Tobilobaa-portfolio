@@ -13,6 +13,10 @@ export type ProjectCardProps = {
 /**
  * "Project Layout Mini" in Figma — a horizontal project row used by the home
  * page's Featured Work section and by the /ask-ai project list.
+ *
+ * The MOBILE/WEB type badge seen in Figma is baked directly into each
+ * thumbnail's artwork (see e.g. "Sanlam export.png"), not rendered by this
+ * component — adding a second badge here would duplicate it.
  */
 const ProjectCard = ({
   image,

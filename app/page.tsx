@@ -1,13 +1,16 @@
-import AboutMeIntro from "@/components/about-me/aboutMeIntro";
-import FeaturedWork from "@/components/homePageComponent/featuredWork";
-import HeroPage from "@/components/homePageComponent/heroPage";
+import type { Metadata } from "next";
+import AskAiChat from "@/components/ask-ai/askAiChat";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Ask AI | Tobiloba's Portfolio",
+  description:
+    "Ask about Tobiloba's projects, skills, experience, or contact information."
+};
+
+export default function AskAiHome() {
   return (
     <main>
-      <HeroPage />
-      <AboutMeIntro showCta />
-      <FeaturedWork />
+      <AskAiChat />
     </main>
   );
 }

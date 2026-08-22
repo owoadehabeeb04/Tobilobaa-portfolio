@@ -1,10 +1,10 @@
 import React from "react";
-import runnersHive1 from "../../public/assets/images/runner1.svg";
-import runnersHive2 from "../../public/assets/images/runner2.svg";
-import runnersHive3 from "../../public/assets/images/runner3.svg";
-import runnersHive4 from "../../public/assets/images/runner4.svg";
+import runnersHive1 from "../../public/assets/images/runner1.webp";
+import runnersHive2 from "../../public/assets/images/runner2.webp";
+import runnersHive3 from "../../public/assets/images/runner3.webp";
+import runnersHive4 from "../../public/assets/images/runner4.webp";
 import Image from "next/image";
-import percentage from "../../public/assets/images/percentagee.svg";
+import percentage from "../../public/assets/images/percentagee.webp";
 
 const WhoIsRunnersHiveFor = () => {
   const casualIcon = (

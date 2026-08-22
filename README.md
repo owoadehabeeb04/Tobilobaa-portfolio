@@ -16,7 +16,26 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Ask AI setup
+
+The / and /ask-ai pages use a server-side RAG assistant. They ground responses in
+Tobiloba's CV and portfolio first, then use a LinkedIn-only Tavily search when
+the local context cannot answer a current or profile question.
+
+The normal portfolio homepage is available at /home.
+
+Copy .env.example to .env.local and add the server-only credentials:
+
+~~~bash
+GROQ_API_KEY=your_groq_api_key
+GROQ_MODEL=openai/gpt-oss-120b
+TAVILY_API_KEY=your_tavily_api_key
+~~~
+
+Never expose either key in client-side code or commit .env.local.
+
+You can start editing the AI page by modifying `app/page.tsx`, or the normal
+portfolio homepage in `app/home/page.tsx`. The page auto-updates as you edit.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
