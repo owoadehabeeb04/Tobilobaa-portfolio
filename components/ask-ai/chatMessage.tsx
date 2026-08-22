@@ -17,10 +17,35 @@ type AssistantMessageProps = {
   error?: boolean;
 };
 
+const BREAK_TAG_PATTERN =
+  /(?:<br\s*\/?>|&lt;\s*br\s*\/?\s*&gt;|&#60;\s*br\s*\/?\s*&#62;)/gi;
+
+const normalizeAssistantMarkdown = (content: string) => {
+  let insideCodeFence = false;
+
+  return content
+    .split("\n")
+    .map((line) => {
+      if (/^\s*(`{3,}|~{3,})/.test(line)) {
+        insideCodeFence = !insideCodeFence;
+        return line;
+      }
+
+      if (insideCodeFence) {
+        return line;
+      }
+
+      const isTableRow = /^\s*\|.*\|\s*$/.test(line);
+
+      return line.replace(BREAK_TAG_PATTERN, isTableRow ? " " : "  \n");
+    })
+    .join("\n");
+};
+
 const markdownComponents: Components = {
   table: ({ children }) => (
-    <div className="my-6 w-full overflow-x-auto rounded-[16px] border border-base">
-      <table className="w-full min-w-[720px] border-collapse text-left text-fig-14">
+    <div className="my-6 w-full min-w-0 max-w-full overflow-x-auto overscroll-x-contain rounded-[16px] border border-base [scrollbar-width:thin]">
+      <table className="w-full min-w-[640px] border-collapse text-left text-fig-14 lg:min-w-0">
         {children}
       </table>
     </div>
@@ -33,14 +58,30 @@ const markdownComponents: Components = {
     <tr className="border-b border-base last:border-b-0">{children}</tr>
   ),
   th: ({ children }) => (
-    <th className="border border-base px-4 py-3 text-left font-semibold text-title">
+    <th className="min-w-[9rem] border border-base px-4 py-3 text-left font-semibold text-title">
       {children}
     </th>
   ),
   td: ({ children }) => (
-    <td className="border border-base px-4 py-3 align-top text-body [&_p]:mb-0">
+    <td className="border border-base px-4 py-3 align-top break-words text-body [&_p]:mb-0">
       {children}
     </td>
+  ),
+  pre: ({ children }) => (
+    <pre className="my-5 max-w-full overflow-x-auto overscroll-x-contain rounded-[16px] border border-base bg-surface-2 p-4 text-[0.82em] leading-relaxed [scrollbar-width:thin]">
+      {children}
+    </pre>
+  ),
+  code: ({ children, className }) => (
+    <code
+      className={
+        className
+          ? "font-mono text-[0.9em]"
+          : "rounded bg-surface-2 px-1 py-0.5 font-mono text-[0.9em]"
+      }
+    >
+      {children}
+    </code>
   )
 };
 
@@ -66,27 +107,31 @@ export const AssistantMessage = ({
   isStreaming = false,
   error = false
 }: AssistantMessageProps) => {
+  const renderedContent = normalizeAssistantMarkdown(
+    content || (isStreaming ? "Thinking…" : "")
+  );
   const markdownClassName = [
-    "text-fig-16 leading-relaxed text-body",
+    "min-w-0 max-w-full text-fig-16 leading-relaxed text-body",
     "[&_a]:text-accent [&_a]:underline [&_a]:underline-offset-2",
     "[&_blockquote]:border-l-2 [&_blockquote]:border-accent [&_blockquote]:pl-4 [&_blockquote]:italic",
     "[&_h1]:font-display [&_h1]:text-title [&_h1]:text-fig-24",
     "[&_h2]:font-display [&_h2]:text-title [&_h2]:text-fig-20",
-    "[&_li]:ml-5 [&_ol]:list-decimal [&_p]:mb-4",
+    "[&_li]:ml-5 [&_ol]:list-decimal [&_p]:mb-4 [&_p:last-child]:mb-0",
     "[&_strong]:font-semibold [&_strong]:text-title [&_ul]:list-disc",
+    "[&_pre_code]:bg-transparent [&_pre_code]:p-0",
     error ? "rounded-[16px] border border-[#b42318]/30 px-4 py-3" : ""
   ]
     .filter(Boolean)
     .join(" ");
 
   return (
-    <div className="flex flex-col gap-6" aria-live="polite">
+    <div className="flex min-w-0 w-full flex-col gap-6" aria-live="polite">
       <div className={markdownClassName}>
         <ReactMarkdown
           components={markdownComponents}
           remarkPlugins={[remarkGfm]}
         >
-          {content || (isStreaming ? "Thinking…" : "")}
+          {renderedContent}
         </ReactMarkdown>
         {isStreaming && (
           <span

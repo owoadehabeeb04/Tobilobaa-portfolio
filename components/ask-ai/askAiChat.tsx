@@ -391,7 +391,7 @@ const AskAiChat = () => {
                 Clear chat
               </button>
             </div>
-            <div className="mx-auto flex w-full max-w-[988px] flex-col gap-10">
+            <div className="mx-auto flex w-full min-w-0 max-w-[988px] flex-col gap-10">
               {messages.map((message) =>
                 message.role === "user" ? (
                   <UserMessage
