@@ -9,7 +9,7 @@ import canvaLogo from "../../public/assets/images/canva-logo.png";
 
 const HeroPage = () => {
   return (
-    <section className="relative mx-auto max-w-[1512px] overflow-hidden px-5 pb-16 pt-[112px] md:px-8 lg:px-[112px]">
+    <section className="relative mx-auto flex min-h-screen max-w-[1512px] flex-col justify-center overflow-hidden px-5 pb-16 pt-[112px] md:px-8 lg:px-[112px]">
       {/* Location + role badges, centred above the wordmark */}
       <div className="flex flex-col items-center gap-2">
         <div className="flex items-center justify-center gap-2">

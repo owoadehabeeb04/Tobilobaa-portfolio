@@ -13,7 +13,7 @@ import AssetManagementRoleStats from "@/components/asset-management/roleStats";
 
 const AssetManagementCaseStudy = () => {
   return (
-    <div className="pt-[6rem] sm:pt-[8rem] md:pt-[10rem]">
+    <div className="pt-[6rem] sm:pt-[6.5rem] md:pt-[7rem]">
       <div className="mx-auto px-[16px] sm:px-[24px] md:px-[48px] lg:px-[103px] max-w-[1311px]">
         <AssetManagementHero />
         <AssetManagementProblem />
